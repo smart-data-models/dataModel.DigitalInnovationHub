@@ -1,4 +1,5 @@
-# DigitalInnovationHubService
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
+# DigitalInnovationHubService
 Version: 0.0.2
 
 ## Description 
