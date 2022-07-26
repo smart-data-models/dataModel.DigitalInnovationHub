@@ -60,28 +60,24 @@
         "additionalMaterial": {
           "type": "array",
           "description": "Property. [StructuredValue](https://schema.org/StructuredValue). Additional Materials of the Digital Innovation Hub.",
-          "items": [
-            {
-              "type": "object",
-              "properties": {
-                "label": {
-                  "type": "string"
-                },
-                "url": {
-                  "type": "string"
-                }
+          "items": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
               }
             }
-          ]
+          }
         },
         "contacts": {
           "type": "array",
           "description": "Property. [StructuredValue](https://schema.org/StructuredValue). Contacts of the Digital Innovation Hub.",
-          "items": [
-            {
-              "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Contact-Commons"
-            }
-          ]
+          "items": {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Contact-Commons"
+          }
         },
         "author": {
           "type": "string",
@@ -90,23 +86,21 @@
         "relation": {
           "type": "array",
           "description": "Property. [StructuredValue](https://schema.org/StructuredValue). Relations of the Digital Innovation Hub Service.",
-          "items": [
-            {
-              "type": "object",
-              "properties": {
-                "relationType": {
-                  "type": "string"
-                },
-                "relationIdentifier": {
-                  "type": "string"
-                }
+          "items": {
+            "type": "object",
+            "properties": {
+              "relationType": {
+                "type": "string"
               },
-              "required": [
-                "relationType",
-                "relationIdentifier"
-              ]
-            }
-          ]
+              "relationIdentifier": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "relationType",
+              "relationIdentifier"
+            ]
+          }
         }
       }
     }
