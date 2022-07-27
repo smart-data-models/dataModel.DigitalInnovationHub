@@ -1,15 +1,17 @@
-エンティティDigitalInnovationHubService  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティDigitalInnovationHubService  
 =================================  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.DigitalInnovationHub/blob/master/DigitalInnovationHubService/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明**企業のイノベーションを促進するために、市場に関するインサイトやトレンドを企業に提供します。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+グローバルでの説明**企業内のイノベーションを促進するための市場に関する洞察や動向の提供。  
+バージョン: 0.0.2  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `additionalMaterial`: [StructuredValue](https://schema.org/StructuredValue)。デジタル・イノベーション・ハブの追加資料です。  - `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `author`: [テキスト](https://schema.org/Text)。デジタル・イノベーション・ハブ・サービス」の著者。  - `category`: [テキスト](https://schema.org/Text)。デジタル・イノベーション・ハブ・サービスのカテゴリーです。  - `contacts`: [StructuredValue](https://schema.org/StructuredValue)。デジタル・イノベーション・ハブの連絡先です。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `relation`: [StructuredValue](https://schema.org/StructuredValue)。デジタル・イノベーション・ハブ・サービスの関係  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `serviceImage`: [StructuredValue](https://schema.org/StructuredValue)。デジタル・イノベーション・ハブ・サービスのイメージ  - `serviceSubType`: [Text](https://schema.org/Text)。デジタルイノベーションハブサービスのServiceSubTypeです。  - `serviceType`: [Text](https://schema.org/Text)。デジタルイノベーションハブサービスのServiceTypeです。  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `target`: [StructuredValue](https://schema.org/StructuredValue)。デジタル・イノベーション・ハブ・サービスの目標  - `type`: NGSIエンティティタイプ。DigitalInnovationHubServiceである必要があります。  - `url`: [URL](https://schema.org/URL)。デジタル・イノベーション・ハブ・サービスのURLです。    
-必須項目  
-- `id`  - `type`  ## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+- `additionalMaterial`: [StructuredValue】(https://schema.org/StructuredValue)。デジタル・イノベーション・ハブの追加資料です。  - `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `author`: [本文】(https://schema.org/Text)。デジタル・イノベーション・ハブ・サービス」の著者。  - `category`: [テキスト](https://schema.org/Text)。デジタル・イノベーション・ハブ・サービスのカテゴリー。  - `contacts`: [StructuredValue】(https://schema.org/StructuredValue)。デジタル・イノベーション・ハブの連絡先  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `id`: エンティティの一意な識別子  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `relation`: [StructuredValue】(https://schema.org/StructuredValue)。デジタル・イノベーション・ハブ・サービスの関係  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `serviceImage`: [StructuredValue】(https://schema.org/StructuredValue)。デジタル・イノベーション・ハブ・サービス」のイメージ。  - `serviceSubType`: [Text](https://schema.org/Text)。デジタル・イノベーション・ハブ・サービスのServiceSubType。  - `serviceType`: [Text】(https://schema.org/Text)。デジタル・イノベーション・ハブ・サービスのServiceType。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `target`: [StructuredValue】(https://schema.org/StructuredValue)。デジタル・イノベーション・ハブ・サービスの目標  - `type`: NGSIエンティティタイプ。DigitalInnovationHubServiceでなければならない。  - `url`: [URL](https://schema.org/URL)。デジタル・イノベーション・ハブ・サービスのURL。    
+必要なプロパティ  
+- `id`  - `type`  ## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 DigitalInnovationHubService:    
@@ -81,6 +83,39 @@ DigitalInnovationHubService:
             contactPoint:    
               description: 'Property. Model:''https://schema.org/ContactPoint''. The details to contact with the item.'    
               properties:    
+                areaServed:    
+                  description: 'Property. The geographic area where a service or offered item is provided. Supersedes serviceArea.'    
+                  type: string    
+                availabilityRestriction:    
+                  anyOf:    
+                    - description: 'Property. Array of identifiers format of any NGSI entity.'    
+                      items:    
+                        maxLength: 256    
+                        minLength: 1    
+                        pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+                        type: string    
+                      type: array    
+                    - description: 'Property. Array of identifiers format of any NGSI entity.'    
+                      items:    
+                        format: uri    
+                        type: string    
+                      type: array    
+                  description: 'Relationship. Model:''http://schema.org/hoursAvailable''. This property links a contact point to information about when the contact point is not available. The details are provided using the Opening Hours Specification class.'    
+                availableLanguage:    
+                  anyOf:    
+                    - anyOf:    
+                        - type: string    
+                        - items:    
+                            type: string    
+                          type: array    
+                  description: 'Property. Model:''http://schema.org/availableLanguage''. A language someone may use with or at the item, service or place. Please use one of the language codes from the IETF BCP 47 standard. It is implemented the Text option but it could be also Language'    
+                contactOption:    
+                  anyOf:    
+                    - type: string    
+                    - items:    
+                        type: string    
+                      type: array    
+                  description: 'Property. Model:''http://schema.org/contactOption''. An option available on this contact point (e.g. a toll-free number or support for hearing-impaired callers).'    
                 contactType:    
                   description: 'Property. Contact type of this item.'    
                   type: string    
@@ -88,8 +123,14 @@ DigitalInnovationHubService:
                   description: 'Property. Email address of owner.'    
                   format: idn-email    
                   type: string    
+                faxNumber:    
+                  description: 'Property. Model:''http://schema.org/Text''. The fax number.'    
+                  type: string    
                 name:    
                   description: 'Property. The name of this item.'    
+                  type: string    
+                productSupported:    
+                  description: 'Property. Model:''http://schema.org/Text''. The product or service this support contact point is related to (such as product support for a particular product line). This can be a specific product or product line (e.g. "iPhone") or a general category of products or services (e.g. "smartphones").'    
                   type: string    
                 telephone:    
                   description: 'Property. Telephone of this contact.'    
@@ -388,8 +429,8 @@ DigitalInnovationHubService:
 ```  
 </details>    
 ## ペイロードの例  
-#### DigitalInnovationHubService NGSI-v2 キーバリューの例  
-DigitalInnovationHubServiceをJSON-LD形式でkey-valuesにした例を紹介します。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### DigitalInnovationHubService NGSI-v2 key-value の例。  
+DigitalInnovationHubServiceをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返す。  
 ```json  
 {  
   "id": "DigitalInnovationHubService:b6IZuH0B_X_d5NJkB0eY",  
@@ -434,7 +475,7 @@ DigitalInnovationHubService:
 }  
 ```  
 #### DigitalInnovationHubService NGSI-v2 正規化例  
-JSON-LD形式のDigitalInnovationHubServiceを正規化した例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+DigitalInnovationHubServiceをJSON-LDフォーマットで正規化した例です。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
 	"id": "urn:ngsi-ld:DigitalInnovationHubService:DigitalInnovationHubService:b6IZuH0B_X_d5NJkB0eY",  
@@ -510,8 +551,8 @@ DigitalInnovationHubService:
 	}  
 }  
 ```  
-#### DigitalInnovationHubService NGSI-LDのキーバリューの例  
-DigitalInnovationHubServiceをJSON-LD形式でkey-valuesにした例を紹介します。これは`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### DigitalInnovationHubService NGSI-LD key-value の例  
+DigitalInnovationHubServiceをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
 ```json  
 {  
   "id": "urn:ngsi-ld:DigitalInnovationHubService:DigitalInnovationHubService:b6IZuH0B_X_d5NJkB0eY",  
@@ -558,8 +599,8 @@ DigitalInnovationHubService:
   ]  
 }  
 ```  
-#### DigitalInnovationHubService NGSI-LDの正規化例  
-JSON-LD形式のDigitalInnovationHubServiceを正規化した例を示します。これはオプションを使わない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### DigitalInnovationHubService NGSI-LD 正規化例  
+DigitalInnovationHubServiceのJSON-LD形式を正規化した例です。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
 	"id": "urn:ngsi-ld:DigitalInnovationHubService:DigitalInnovationHubService:b6IZuH0B_X_d5NJkB0eY",  
