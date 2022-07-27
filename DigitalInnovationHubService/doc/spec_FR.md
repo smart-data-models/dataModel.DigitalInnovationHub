@@ -1,12 +1,14 @@
-Entité : DigitalInnovationHubService  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entité : DigitalInnovationHubService  
 ====================================  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.DigitalInnovationHub/blob/master/DigitalInnovationHubService/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Description globale : **Fourniture d'informations et de tendances sur les marchés aux entreprises afin de stimuler leur innovation interne.**  
+version : 0.0.2  
 
 ## Liste des propriétés  
 
-- `additionalMaterial`: [Valeur structurée](https://schema.org/StructuredValue). Matériaux supplémentaires du Centre d'innovation numérique.  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `author`: [Texte](https://schema.org/Text). Auteur du service Digital Innovation Hub.  - `category`: [Texte](https://schema.org/Text). Catégorie du service Digital Innovation Hub.  - `contacts`: [Valeur structurée](https://schema.org/StructuredValue). Contacts du pôle d'innovation numérique.  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `relation`: [Valeur structurée](https://schema.org/StructuredValue). Relations du service Digital Innovation Hub.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `serviceImage`: [Valeur structurée](https://schema.org/StructuredValue). Image du service Digital Innovation Hub.  - `serviceSubType`: [Texte](https://schema.org/Text). ServiceSubType du service de centre d'innovation numérique.  - `serviceType`: [Texte](https://schema.org/Text). ServiceType du service de centre d'innovation numérique.  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `target`: [Valeur structurée](https://schema.org/StructuredValue). Objectifs du service du pôle d'innovation numérique.  - `type`: Type d'entité NGSI. Il doit s'agir de DigitalInnovationHubService.  - `url`: [URL](https://schema.org/URL). URL du service Digital Innovation Hub.    
+- `additionalMaterial`: [Valeur structurée](https://schema.org/StructuredValue). Matériaux supplémentaires du Centre d'innovation numérique.  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `author`: [Texte](https://schema.org/Text). Auteur du service Digital Innovation Hub.  - `category`: [Texte](https://schema.org/Text). Catégorie du service Digital Innovation Hub.  - `contacts`: [Valeur structurée](https://schema.org/StructuredValue). Contacts du pôle d'innovation numérique.  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `relation`: [Valeur structurée](https://schema.org/StructuredValue). Relations du service Digital Innovation Hub.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `serviceImage`: [Valeur structurée](https://schema.org/StructuredValue). Image du service Digital Innovation Hub.  - `serviceSubType`: [Texte](https://schema.org/Text). ServiceSubType du service de centre d'innovation numérique.  - `serviceType`: [Texte](https://schema.org/Text). ServiceType du service de centre d'innovation numérique.  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `target`: [Valeur structurée](https://schema.org/StructuredValue). Objectifs du service du pôle d'innovation numérique.  - `type`: Type d'entité NGSI. Il doit s'agir de DigitalInnovationHubService.  - `url`: [URL](https://schema.org/URL). URL du service Digital Innovation Hub.    
 Propriétés requises  
 - `id`  - `type`  ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
@@ -81,6 +83,39 @@ DigitalInnovationHubService:
             contactPoint:    
               description: 'Property. Model:''https://schema.org/ContactPoint''. The details to contact with the item.'    
               properties:    
+                areaServed:    
+                  description: 'Property. The geographic area where a service or offered item is provided. Supersedes serviceArea.'    
+                  type: string    
+                availabilityRestriction:    
+                  anyOf:    
+                    - description: 'Property. Array of identifiers format of any NGSI entity.'    
+                      items:    
+                        maxLength: 256    
+                        minLength: 1    
+                        pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+                        type: string    
+                      type: array    
+                    - description: 'Property. Array of identifiers format of any NGSI entity.'    
+                      items:    
+                        format: uri    
+                        type: string    
+                      type: array    
+                  description: 'Relationship. Model:''http://schema.org/hoursAvailable''. This property links a contact point to information about when the contact point is not available. The details are provided using the Opening Hours Specification class.'    
+                availableLanguage:    
+                  anyOf:    
+                    - anyOf:    
+                        - type: string    
+                        - items:    
+                            type: string    
+                          type: array    
+                  description: 'Property. Model:''http://schema.org/availableLanguage''. A language someone may use with or at the item, service or place. Please use one of the language codes from the IETF BCP 47 standard. It is implemented the Text option but it could be also Language'    
+                contactOption:    
+                  anyOf:    
+                    - type: string    
+                    - items:    
+                        type: string    
+                      type: array    
+                  description: 'Property. Model:''http://schema.org/contactOption''. An option available on this contact point (e.g. a toll-free number or support for hearing-impaired callers).'    
                 contactType:    
                   description: 'Property. Contact type of this item.'    
                   type: string    
@@ -88,8 +123,14 @@ DigitalInnovationHubService:
                   description: 'Property. Email address of owner.'    
                   format: idn-email    
                   type: string    
+                faxNumber:    
+                  description: 'Property. Model:''http://schema.org/Text''. The fax number.'    
+                  type: string    
                 name:    
                   description: 'Property. The name of this item.'    
+                  type: string    
+                productSupported:    
+                  description: 'Property. Model:''http://schema.org/Text''. The product or service this support contact point is related to (such as product support for a particular product line). This can be a specific product or product line (e.g. "iPhone") or a general category of products or services (e.g. "smartphones").'    
                   type: string    
                 telephone:    
                   description: 'Property. Telephone of this contact.'    
@@ -388,8 +429,8 @@ DigitalInnovationHubService:
 ```  
 </details>    
 ## Exemples de charges utiles  
-#### DigitalInnovationHubService NGSI-v2 key-values Exemple  
-Voici un exemple d'un DigitalInnovationHubService au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+#### DigitalInnovationHubService Valeurs-clés NGSI-v2 Exemple  
+Voici un exemple de DigitalInnovationHubService au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
   "id": "DigitalInnovationHubService:b6IZuH0B_X_d5NJkB0eY",  
@@ -434,7 +475,7 @@ DigitalInnovationHubService:
 }  
 ```  
 #### DigitalInnovationHubService NGSI-v2 normalisé Exemple  
-Voici un exemple d'un DigitalInnovationHubService au format JSON-LD tel que normalisé. Il est compatible avec NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Voici un exemple d'un DigitalInnovationHubService au format JSON-LD tel que normalisé. Il est compatible avec la NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
 	"id": "urn:ngsi-ld:DigitalInnovationHubService:DigitalInnovationHubService:b6IZuH0B_X_d5NJkB0eY",  
@@ -510,7 +551,7 @@ DigitalInnovationHubService:
 	}  
 }  
 ```  
-#### DigitalInnovationHubService Valeurs clés NGSI-LD Exemple  
+#### DigitalInnovationHubService NGSI-LD key-values Exemple  
 Voici un exemple de DigitalInnovationHubService au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
