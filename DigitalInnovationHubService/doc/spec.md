@@ -1,8 +1,10 @@
-Entity: DigitalInnovationHubService  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: DigitalInnovationHubService  
 ===================================  
 [Open License](https://github.com/smart-data-models//dataModel.DigitalInnovationHub/blob/master/DigitalInnovationHubService/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Global description: **Provision of insights and trend on markets to companies to stimulate their internal innovation.**  
+version: 0.0.2  
 
 ## List of properties  
 
@@ -81,6 +83,39 @@ DigitalInnovationHubService:
             contactPoint:    
               description: 'Property. Model:''https://schema.org/ContactPoint''. The details to contact with the item.'    
               properties:    
+                areaServed:    
+                  description: 'Property. The geographic area where a service or offered item is provided. Supersedes serviceArea.'    
+                  type: string    
+                availabilityRestriction:    
+                  anyOf:    
+                    - description: 'Property. Array of identifiers format of any NGSI entity.'    
+                      items:    
+                        maxLength: 256    
+                        minLength: 1    
+                        pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+                        type: string    
+                      type: array    
+                    - description: 'Property. Array of identifiers format of any NGSI entity.'    
+                      items:    
+                        format: uri    
+                        type: string    
+                      type: array    
+                  description: 'Relationship. Model:''http://schema.org/hoursAvailable''. This property links a contact point to information about when the contact point is not available. The details are provided using the Opening Hours Specification class.'    
+                availableLanguage:    
+                  anyOf:    
+                    - anyOf:    
+                        - type: string    
+                        - items:    
+                            type: string    
+                          type: array    
+                  description: 'Property. Model:''http://schema.org/availableLanguage''. A language someone may use with or at the item, service or place. Please use one of the language codes from the IETF BCP 47 standard. It is implemented the Text option but it could be also Language'    
+                contactOption:    
+                  anyOf:    
+                    - type: string    
+                    - items:    
+                        type: string    
+                      type: array    
+                  description: 'Property. Model:''http://schema.org/contactOption''. An option available on this contact point (e.g. a toll-free number or support for hearing-impaired callers).'    
                 contactType:    
                   description: 'Property. Contact type of this item.'    
                   type: string    
@@ -88,8 +123,14 @@ DigitalInnovationHubService:
                   description: 'Property. Email address of owner.'    
                   format: idn-email    
                   type: string    
+                faxNumber:    
+                  description: 'Property. Model:''http://schema.org/Text''. The fax number.'    
+                  type: string    
                 name:    
                   description: 'Property. The name of this item.'    
+                  type: string    
+                productSupported:    
+                  description: 'Property. Model:''http://schema.org/Text''. The product or service this support contact point is related to (such as product support for a particular product line). This can be a specific product or product line (e.g. "iPhone") or a general category of products or services (e.g. "smartphones").'    
                   type: string    
                 telephone:    
                   description: 'Property. Telephone of this contact.'    
