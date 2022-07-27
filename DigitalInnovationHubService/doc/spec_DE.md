@@ -1,12 +1,14 @@
-Entität: DigitalInnovationHubService  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entität: DigitalInnovationHubService  
 ====================================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.DigitalInnovationHub/blob/master/DigitalInnovationHubService/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Bereitstellung von Erkenntnissen und Trends über Märkte für Unternehmen, um deren interne Innovation zu fördern**.  
+Version: 0.0.2  
 
 ## Liste der Eigenschaften  
 
-- `additionalMaterial`: [StructuredValue](https://schema.org/StructuredValue). Zusätzliche Materialien des Digital Innovation Hub.  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `author`: [Text](https://schema.org/Text). Autor des Digital Innovation Hub Service.  - `category`: [Text](https://schema.org/Text). Kategorie des Digital Innovation Hub Service.  - `contacts`: [StructuredValue](https://schema.org/StructuredValue). Kontakte des Digital Innovation Hub.  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `relation`: [StructuredValue](https://schema.org/StructuredValue). Beziehungen des Digital Innovation Hub Service.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `serviceImage`: [StructuredValue](https://schema.org/StructuredValue). Bild des Digital Innovation Hub Service.  - `serviceSubType`: [Text](https://schema.org/Text). ServiceSubType des Digital Innovation Hub Service.  - `serviceType`: [Text](https://schema.org/Text). ServiceType des Digital Innovation Hub Service.  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der vollständig qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `target`: [StructuredValue](https://schema.org/StructuredValue). Ziele des Digital Innovation Hub Service.  - `type`: NGSI-Entitätstyp. Es muss DigitalInnovationHubService sein.  - `url`: [URL](https://schema.org/URL). URL des Digital Innovation Hub Service.    
+- `additionalMaterial`: [StructuredValue](https://schema.org/StructuredValue). Zusätzliche Materialien des Digital Innovation Hub.  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `author`: [Text](https://schema.org/Text). Autor des Digital Innovation Hub Service.  - `category`: [Text](https://schema.org/Text). Kategorie des Digital Innovation Hub Service.  - `contacts`: [StructuredValue](https://schema.org/StructuredValue). Kontakte des Digital Innovation Hub.  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `relation`: [StructuredValue](https://schema.org/StructuredValue). Beziehungen des Digital Innovation Hub Service.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `serviceImage`: [StructuredValue](https://schema.org/StructuredValue). Bild des Digital Innovation Hub Service.  - `serviceSubType`: [Text](https://schema.org/Text). ServiceSubType des Digital Innovation Hub Service.  - `serviceType`: [Text](https://schema.org/Text). ServiceType des Digital Innovation Hub Service.  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `target`: [StructuredValue](https://schema.org/StructuredValue). Ziele des Digital Innovation Hub Service.  - `type`: NGSI-Entitätstyp. Es muss DigitalInnovationHubService sein.  - `url`: [URL](https://schema.org/URL). URL des Digital Innovation Hub Service.    
 Erforderliche Eigenschaften  
 - `id`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
@@ -81,6 +83,39 @@ DigitalInnovationHubService:
             contactPoint:    
               description: 'Property. Model:''https://schema.org/ContactPoint''. The details to contact with the item.'    
               properties:    
+                areaServed:    
+                  description: 'Property. The geographic area where a service or offered item is provided. Supersedes serviceArea.'    
+                  type: string    
+                availabilityRestriction:    
+                  anyOf:    
+                    - description: 'Property. Array of identifiers format of any NGSI entity.'    
+                      items:    
+                        maxLength: 256    
+                        minLength: 1    
+                        pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+                        type: string    
+                      type: array    
+                    - description: 'Property. Array of identifiers format of any NGSI entity.'    
+                      items:    
+                        format: uri    
+                        type: string    
+                      type: array    
+                  description: 'Relationship. Model:''http://schema.org/hoursAvailable''. This property links a contact point to information about when the contact point is not available. The details are provided using the Opening Hours Specification class.'    
+                availableLanguage:    
+                  anyOf:    
+                    - anyOf:    
+                        - type: string    
+                        - items:    
+                            type: string    
+                          type: array    
+                  description: 'Property. Model:''http://schema.org/availableLanguage''. A language someone may use with or at the item, service or place. Please use one of the language codes from the IETF BCP 47 standard. It is implemented the Text option but it could be also Language'    
+                contactOption:    
+                  anyOf:    
+                    - type: string    
+                    - items:    
+                        type: string    
+                      type: array    
+                  description: 'Property. Model:''http://schema.org/contactOption''. An option available on this contact point (e.g. a toll-free number or support for hearing-impaired callers).'    
                 contactType:    
                   description: 'Property. Contact type of this item.'    
                   type: string    
@@ -88,8 +123,14 @@ DigitalInnovationHubService:
                   description: 'Property. Email address of owner.'    
                   format: idn-email    
                   type: string    
+                faxNumber:    
+                  description: 'Property. Model:''http://schema.org/Text''. The fax number.'    
+                  type: string    
                 name:    
                   description: 'Property. The name of this item.'    
+                  type: string    
+                productSupported:    
+                  description: 'Property. Model:''http://schema.org/Text''. The product or service this support contact point is related to (such as product support for a particular product line). This can be a specific product or product line (e.g. "iPhone") or a general category of products or services (e.g. "smartphones").'    
                   type: string    
                 telephone:    
                   description: 'Property. Telephone of this contact.'    
