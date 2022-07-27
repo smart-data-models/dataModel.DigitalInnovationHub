@@ -1,15 +1,17 @@
-エンティティDigitalInnovationHub  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティDigitalInnovationHub  
 ==========================  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.DigitalInnovationHub/blob/master/DigitalInnovationHub/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明です。**デジタル・イノベーション・ハブは、企業のビジネス/生産プロセスにおける競争力を高めるためのワンストップショップです。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+グローバルでの説明**デジタル・イノベーション・ハブは、企業のビジネス/生産プロセスの競争力強化を支援するワンストップ・ショップです**。  
+バージョン: 0.0.2  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `competences`: [StructuredValue](https://schema.org/StructuredValue)。デジタル・イノベーション・ハブのコンピテンス  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `domain`: [StructuredValue](https://schema.org/StructuredValue)。デジタル・イノベーション・ハブのドメインです。  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `logo`: [StructuredValue](https://schema.org/StructuredValue)。デジタル・イノベーション・ハブのロゴ。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `relation`: [StructuredValue](https://schema.org/StructuredValue)。デジタル・イノベーション・ハブの関係  - `representatives`: [StructuredValue](https://schema.org/StructuredValue)。デジタル・イノベーション・ハブの代表。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `socialAccounts`: [StructuredValue](https://schema.org/StructuredValue)。デジタル・イノベーション・ハブのSocialAccountsです。  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIのエンティティタイプ。DigitalInnovationHubである必要があります。  - `website`: [URL](https://schema.org/URL)。デジタル・イノベーション・ハブのウェブサイト。    
-必須項目  
-- `id`  - `type`  ## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `competences`: [StructuredValue】(https://schema.org/StructuredValue)。デジタル・イノベーション・ハブのコンピタンス。  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `domain`: [StructuredValue】(https://schema.org/StructuredValue)。デジタル・イノベーション・ハブの領域。  - `id`: エンティティの一意な識別子  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `logo`: [StructuredValue】(https://schema.org/StructuredValue)。デジタル・イノベーション・ハブのロゴマーク。  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `relation`: [StructuredValue】(https://schema.org/StructuredValue)。デジタル・イノベーション・ハブの関係  - `representatives`: [StructuredValue】(https://schema.org/StructuredValue)。デジタル・イノベーション・ハブの代表者。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `socialAccounts`: [StructuredValue】(https://schema.org/StructuredValue)。デジタル・イノベーション・ハブのSocialAccounts。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIエンティティタイプ。DigitalInnovationHubでなければならない。  - `website`: [URL](https://schema.org/URL)をご覧ください。デジタル・イノベーション・ハブのウェブサイト。    
+必要なプロパティ  
+- `id`  - `type`  ## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 DigitalInnovationHub:    
@@ -365,8 +367,8 @@ DigitalInnovationHub:
 ```  
 </details>    
 ## ペイロードの例  
-#### DigitalInnovationHub NGSI-v2 キーバリューの例  
-DigitalInnovationHubをJSON-LD形式でkey-valuesにした例を紹介します。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### DigitalInnovationHub NGSI-v2キーバリューの例  
+DigitalInnovationHubをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
 	"id": "DigitalInnovationHub:Z6LGtH0B_X_d5NJkJEfB",  
@@ -416,8 +418,8 @@ DigitalInnovationHub:
 	]  
 }  
 ```  
-#### DigitalInnovationHub NGSI-v2の正規化例  
-JSON-LD形式のDigitalInnovationHubを正規化した例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### DigitalInnovationHub NGSI-v2 正規化例  
+DigitalInnovationHubをJSON-LD形式で正規化した例です。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
 	"id": "urn:ngsi-ld:DigitalInnovationHub:DigitalInnovationHub:Z6LGtH0B_X_d5NJkJEfB",  
@@ -497,8 +499,8 @@ DigitalInnovationHub:
 	}  
 }  
 ```  
-#### DigitalInnovationHub NGSI-LDのキーバリューの例  
-DigitalInnovationHubをkey-valuesとしてJSON-LD形式で表現した例です。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### DigitalInnovationHub NGSI-LDのキー値例  
+DigitalInnovationHubをJSON-LD形式でkey-valuesにした例です。これは `options=keyValues` を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
 	"id": "urn:ngsi-ld:DigitalInnovationHub:DigitalInnovationHub:Z6LGtH0B_X_d5NJkJEfB",  
@@ -551,8 +553,8 @@ DigitalInnovationHub:
   ]  
 }  
 ```  
-#### DigitalInnovationHub NGSI-LDの正規化例  
-JSON-LD形式のDigitalInnovationHubを正規化した例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### DigitalInnovationHub NGSI-LD 正規化例  
+DigitalInnovationHubをJSON-LD形式で正規化した例です。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
 	"id": "urn:ngsi-ld:DigitalInnovationHub:DigitalInnovationHub:Z6LGtH0B_X_d5NJkJEfB",  
