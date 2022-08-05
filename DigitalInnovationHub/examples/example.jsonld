@@ -3,11 +3,15 @@
 	"type": "DigitalInnovationHub",
 	"title": "Sample DIH",
 	"website": "https://www.sample-dih.com/",
-	"logo": {
-		"base64Data": "iVBORw0KGgM3ceusb/AAAAAElFTkSuQmCC",
-		"fileName": "logo.png"
-	},
+	"logo": "https://www.sample-dih.com/logo.png",
 	"description": "Digital Innovation Hubs are one-stop-shops that help companies to become more competitive with regard to their business/production processes",
+	"location": {
+        "coordinates": [
+            43.66481,
+			7.196545
+        ],
+        "type": "Point"
+    },
 	"address": {
 		"streetAddress": "Viale della Regione Siciliana Nord Ovest",
 		"addressRegion": "Sicily",
@@ -15,13 +19,15 @@
 		"addressCountry": "IT",
 		"addressLocality": "Palermo"
 	},
-	"representatives": [{
-		"name": "John",
-		"surname": "Doe",
-		"email": "john.doe@sample-dih.com",
-		"role": "Engineer",
-		"responsibilities": "Manufacturing engineer"
-	}],
+	"representatives": [
+		{
+			"name": "John",
+			"surname": "Doe",
+			"email": "john.doe@sample-dih.com",
+			"role": "Engineer",
+			"responsibilities": "Manufacturing engineer"
+		}
+	],
 	"domain": [
 		"Manufacture of machinery and equipment"
 	],
@@ -35,16 +41,12 @@
 		"instagram": "https://www.instagram.com/lifeatsampledih"
 	},
 	"relation": [
-		{
-			"relationType": "dih",
-			"relationIdentifier": "b6IZuH0B_X_d5NJkB0eY"
-		},
-		{
-			"relationType": "service",
-			"relationIdentifier": "b6IZuH0B_X_d5NJkB0eX"
-		}
+		"urn:ngsi-ld:DigitalInnovationHub:id:1",
+		"urn:ngsi-ld:DigitalInnovationHub:id:2"
 	],
-  "@context": [
-   "https://smart-data-models.github.io/dataModel.DigitalInnovationHub/context.jsonld"
-  ]
+	"dateSubmitted": "2020-07-07T15:05:59.408Z",
+	"dateUpdated": "2020-07-07T15:05:59.408Z",
+	"@context": [
+		"https://smart-data-models.github.io/dataModel.DigitalInnovationHub/context.jsonld"
+	]
 }

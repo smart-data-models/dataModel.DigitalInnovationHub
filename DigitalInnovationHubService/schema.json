@@ -23,16 +23,8 @@
           ]
         },
         "serviceImage": {
-          "type": "object",
-          "description": "Property. [StructuredValue](https://schema.org/StructuredValue). Image of the Digital Innovation Hub Service.",
-          "properties": {
-            "base64Data": {
-              "type": "string"
-            },
-            "fileName": {
-              "type": "string"
-            }
-          }
+          "type": "string",
+          "description": "Property. [URL](https://schema.org/URL). URL of the image of the Digital Innovation Hub Service."
         },
         "category": {
           "type": "string",
@@ -92,21 +84,19 @@
           "description": "Property. [StructuredValue](https://schema.org/StructuredValue). Relations of the Digital Innovation Hub Service.",
           "items": [
             {
-              "type": "object",
-              "properties": {
-                "relationType": {
-                  "type": "string"
-                },
-                "relationIdentifier": {
-                  "type": "string"
-                }
-              },
-              "required": [
-                "relationType",
-                "relationIdentifier"
-              ]
+              "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
             }
           ]
+        },
+        "dateSubmitted": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Property. The date and time of this observation in ISO8601 UTC format. Model:'https://schema.org/DateTime'"
+        },
+        "dateUpdated": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Property. The date and time of this observation in ISO8601 UTC format. Model:'https://schema.org/DateTime'"
         }
       }
     }

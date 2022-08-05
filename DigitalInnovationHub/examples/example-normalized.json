@@ -10,15 +10,22 @@
 		"value": "https://www.sample-dih.com/"
 	},
 	"logo": {
-		"type": "StructuredValue",
-		"value": {
-			"base64Data": "iVBORw0KGgM3ceusb/AAAAAElFTkSuQmCC",
-			"fileName": "logo.png"
-		}
+		"type": "Property",
+		"value": "https://www.sample-dih.com/logo.png"
 	},
 	"description": {
 		"type": "Text",
 		"value": "Digital Innovation Hubs are one-stop-shops that help companies to become more competitive with regard to their business/production processes"
+	},
+	"location": {
+		"type": "GeoProperty",
+		"value": {
+			"type": "Point",
+			"coordinates": [
+				43.66481,
+				7.196545
+			]
+		}
 	},
 	"address": {
 		"type": "StructuredValue",
@@ -62,16 +69,24 @@
 		}
 	},
 	"relation": {
-		"type": "StructuredValue",
+		"type": "array",
 		"value": [
-			{
-				"relationType": "dih",
-				"relationIdentifier": "b6IZuH0B_X_d5NJkB0eY"
-			},
-			{
-				"relationType": "service",
-				"relationIdentifier": "b6IZuH0B_X_d5NJkB0eX"
-			}
+			"urn:ngsi-ld:DigitalInnovationHub:id:1",
+			"urn:ngsi-ld:DigitalInnovationHub:id:2"
 		]
+	},
+	"dateSubmitted": {
+		"type": "Property",
+		"value": [
+			"urn:ngsi-ld:DigitalInnovationHub:id:1",
+			"urn:ngsi-ld:DigitalInnovationHub:id:2"
+		]
+	},
+	"dateUpdated": {
+		"type": "Property",
+		"value": {
+			"type": "DateTime",
+			"value": "2020-07-07T15:05:59.408Z"
+		}
 	}
 }
