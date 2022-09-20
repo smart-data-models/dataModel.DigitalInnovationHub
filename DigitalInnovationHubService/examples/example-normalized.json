@@ -10,7 +10,7 @@
 		"value": "Provision of insights and trend on markets to companies to stimulate their internal innovation"
 	},
 	"serviceImage": {
-		"type": "Property",
+		"type": "URL",
 		"value": "https://www.sample-dih.com/logo.png"
 	},
 	"category": {
@@ -70,17 +70,13 @@
 		]
 	},
 	"dateSubmitted": {
-		"type": "Property",
-		"value": {
-			"type": "DateTime",
-			"value": "2020-07-07T15:05:59.408Z"
-		}
+		"type": "Date-Time",
+		"value": "2020-07-07T15:05:59.408Z"
+		
 	},
 	"dateUpdated": {
-		"type": "Property",
-		"value": {
-			"type": "DateTime",
-			"value": "2020-07-07T15:05:59.408Z"
-		}
+		"type": "Date-Time",
+		"value": "2020-07-07T15:05:59.408Z"
+		
 	}
 }
