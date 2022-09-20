@@ -59,7 +59,7 @@
 		"value": "John Doe"
 	},
 	"relation": {
-		"type": "array",
+		"type": "Relationship",
 		"value": [
 			"urn:ngsi-ld:DigitalInnovationHub:id:1",
 			"urn:ngsi-ld:DigitalInnovationHub:id:2"
