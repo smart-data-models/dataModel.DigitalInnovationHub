@@ -11,10 +11,7 @@
 	},
 	"serviceImage": {
 		"type": "Property",
-		"value": {
-			"base64Data": "iVBORa1ytHEAAAAAElFTkSuQmCC",
-			"fileName": "it.png"
-		}
+		"value": "https://www.sample-dih.com/logo.png"
 	},
 	"category": {
 		"type": "Property",
@@ -41,36 +38,52 @@
 	},
 	"additionalMaterial": {
 		"type": "Property",
-		"value": [{
-			"label": "Brochure",
-			"url": "https://www.sample-dih.com/trend-watching/brochure.pdf"
-		}]
+		"value": [
+			{
+				"label": "Brochure",
+				"url": "https://www.sample-dih.com/trend-watching/brochure.pdf"
+			}
+		]
 	},
 	"contacts": {
 		"type": "Property",
-		"value": [{
-			"name": "Mark Johnson",
-			"email": "mark.johnson@sample-dih.it"
-		}]
+		"value": [
+			{
+				"name": "Mark Johnson",
+				"email": "mark.johnson@sample-dih.it"
+			}
+		]
 	},
 	"author": {
 		"type": "Property",
 		"value": "John Doe"
 	},
 	"relation": {
-		"type": "Property",
+		"type": "Relationship",
 		"value": [
 			{
-				"relationType": "dih",
-				"relationIdentifier": "b6IZuH0B_X_d5NJkB0eY"
-			},
-			{
-				"relationType": "service",
-				"relationIdentifier": "b6IZuH0B_X_d5NJkB0eX"
-			}
+                "id": "urn:ngsi-ld:DigitalInnovationHubService:id:R5Ju4oO0_X_Jy8GO5d2"
+            },
+            {
+                "id": "urn:ngsi-ld:DigitalInnovationHubService:id:D5yr9HT3_X_RH7Fy7H9"
+            }
 		]
 	},
-  "@context": [
-    "https://smart-data-models.github.io/dataModel.DigitalInnovationHub/context.jsonld"
-  ]
+	"dateSubmitted": {
+		"type": "Property",
+		"value": {
+			"type": "DateTime",
+			"value": "2020-07-07T15:05:59.408Z"
+		}
+	},
+	"dateUpdated": {
+		"type": "Property",
+		"value": {
+			"type": "DateTime",
+			"value": "2020-07-07T15:05:59.408Z"
+		}
+	},
+	"@context": [
+		"https://smart-data-models.github.io/dataModel.DigitalInnovationHub/context.jsonld"
+	]
 }

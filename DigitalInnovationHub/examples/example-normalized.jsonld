@@ -11,14 +11,21 @@
 	},
 	"logo": {
 		"type": "Property",
-		"value": {
-			"base64Data": "iVBORw0KGgM3ceusb/AAAAAElFTkSuQmCC",
-			"fileName": "logo.png"
-		}
+		"value": "https://www.sample-dih.com/logo.png"
 	},
 	"description": {
 		"type": "Property",
 		"value": "Digital Innovation Hubs are one-stop-shops that help companies to become more competitive with regard to their business/production processes"
+	},
+	"location": {
+		"type": "GeoProperty",
+		"value": {
+			"type": "Point",
+			"coordinates": [
+				43.66481,
+				7.196545
+			]
+		}
 	},
 	"address": {
 		"type": "Property",
@@ -32,13 +39,15 @@
 	},
 	"representatives": {
 		"type": "Property",
-		"value": [{
-			"name": "John",
-			"surname": "Doe",
-			"email": "john.doe@sample-dih.com",
-			"role": "Engineer",
-			"responsibilities": "Manufacturing engineer"
-		}]
+		"value": [
+			{
+				"name": "John",
+				"surname": "Doe",
+				"email": "john.doe@sample-dih.com",
+				"role": "Engineer",
+				"responsibilities": "Manufacturing engineer"
+			}
+		]
 	},
 	"domain": {
 		"type": "Property",
@@ -62,19 +71,31 @@
 		}
 	},
 	"relation": {
-		"type": "Property",
+		"type": "Relationship",
 		"value": [
 			{
-				"relationType": "dih",
-				"relationIdentifier": "b6IZuH0B_X_d5NJkB0eY"
-			},
-			{
-				"relationType": "service",
-				"relationIdentifier": "b6IZuH0B_X_d5NJkB0eX"
-			}
+                "id": "urn:ngsi-ld:DigitalInnovationHub:id:R5Ju4oO0_X_Jy8GO5d2"
+            },
+            {
+                "id": "urn:ngsi-ld:DigitalInnovationHub:id:D5yr9HT3_X_RH7Fy7H9"
+            }
 		]
 	},
-  "@context": [
-    "https://smart-data-models.github.io/dataModel.DigitalInnovationHub/context.jsonld"
-  ]
+	"dateSubmitted": {
+		"type": "Property",
+		"value": {
+			"type": "DateTime",
+			"value": "2020-07-07T15:05:59.408Z"
+		}
+	},
+	"dateUpdated": {
+		"type": "Property",
+		"value": {
+			"type": "DateTime",
+			"value": "2020-07-07T15:05:59.408Z"
+		}
+	},
+	"@context": [
+		"https://smart-data-models.github.io/dataModel.DigitalInnovationHub/context.jsonld"
+	]
 }
