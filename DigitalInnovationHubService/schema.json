@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0.2",
+  "$schemaVersion": "0.0.3",
   "$id": "https://smart-data-models.github.io/dataModel.DIH/DigitalInnovationHubService/schema.json",
   "title": "Sample DIH Service",
   "description": "Provision of insights and trend on markets to companies to stimulate their internal innovation.",
@@ -21,6 +21,7 @@
         },
         "serviceImage": {
           "type": "string",
+          "format": "uri",
           "description": "Property. Model:'https://schema.org/URL'. URL of the image of the Digital Innovation Hub Service."
         },
         "category": {
