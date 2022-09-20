@@ -61,8 +61,12 @@
 	"relation": {
 		"type": "Relationship",
 		"value": [
-			"urn:ngsi-ld:DigitalInnovationHub:id:1",
-			"urn:ngsi-ld:DigitalInnovationHub:id:2"
+			{
+                "id": "urn:ngsi-ld:DigitalInnovationHubService:id:R5Ju4oO0_X_Jy8GO5d2"
+            },
+            {
+                "id": "urn:ngsi-ld:DigitalInnovationHubService:id:D5yr9HT3_X_RH7Fy7H9"
+            }
 		]
 	},
 	"dateSubmitted": {

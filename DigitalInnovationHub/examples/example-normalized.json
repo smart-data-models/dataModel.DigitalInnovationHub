@@ -1,5 +1,5 @@
 {
-	"id": "urn:ngsi-ld:DigitalInnovationHub:DigitalInnovationHub:Z6LGtH0B_X_d5NJkJEfB",
+	"id": "DigitalInnovationHub:Z6LGtH0B_X_d5NJkJEfB",
 	"type": "DigitalInnovationHub",
 	"title": {
 		"type": "Text",
@@ -10,7 +10,7 @@
 		"value": "https://www.sample-dih.com/"
 	},
 	"logo": {
-		"type": "Property",
+		"type": "URL",
 		"value": "https://www.sample-dih.com/logo.png"
 	},
 	"description": {
@@ -39,16 +39,18 @@
 	},
 	"representatives": {
 		"type": "array",
-		"value": [{
-			"name": "John",
-			"surname": "Doe",
-			"email": "john.doe@sample-dih.com",
-			"role": "Engineer",
-			"responsibilities": "Manufacturing engineer"
-		}]
+		"value": [
+			{
+				"name": "John",
+				"surname": "Doe",
+				"email": "john.doe@sample-dih.com",
+				"role": "Engineer",
+				"responsibilities": "Manufacturing engineer"
+			}
+		]
 	},
 	"domain": {
-		"type": "Property",
+		"type": "array",
 		"value": [
 			"Manufacture of machinery and equipment"
 		]
@@ -71,19 +73,23 @@
 	"relation": {
 		"type": "array",
 		"value": [
-			"urn:ngsi-ld:DigitalInnovationHub:id:1",
-			"urn:ngsi-ld:DigitalInnovationHub:id:2"
+			{
+				"id": "DigitalInnovationHub:R5Ju4oO0_X_Jy8GO5d2"
+			},
+			{
+				"id": "DigitalInnovationHub:D5yr9HT3_X_RH7Fy7H9"
+			}
 		]
 	},
 	"dateSubmitted": {
-		"type": "Property",
-		"value": [
-			"urn:ngsi-ld:DigitalInnovationHub:id:1",
-			"urn:ngsi-ld:DigitalInnovationHub:id:2"
-		]
+		"type": "DateTime",
+		"value": {
+			"type": "DateTime",
+			"value": "2020-05-07T15:00:13.408Z"
+		}
 	},
 	"dateUpdated": {
-		"type": "Property",
+		"type": "DateTime",
 		"value": {
 			"type": "DateTime",
 			"value": "2020-07-07T15:05:59.408Z"
