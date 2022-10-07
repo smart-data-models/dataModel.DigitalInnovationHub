@@ -36,6 +36,7 @@
     "dateSubmitted": "2020-07-07T15:05:59.408Z",
     "dateUpdated": "2020-07-07T15:05:59.408Z",
     "@context": [
-        "https://smart-data-models.github.io/dataModel.DigitalInnovationHub/context.jsonld"
+        "https://smart-data-models.github.io/dataModel.DigitalInnovationHub/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.DigitalInnovationHub/master/context.jsonld"
     ]
 }
