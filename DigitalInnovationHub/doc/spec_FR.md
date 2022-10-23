@@ -1,17 +1,31 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entité : DigitalInnovationHub  
-=============================  
+=============================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.DigitalInnovationHub/blob/master/DigitalInnovationHub/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Description globale : **Les centres d'innovation numérique sont des guichets uniques qui aident les entreprises à devenir plus compétitives en ce qui concerne leurs processus d'affaires/de production**.  
-version : 0.0.2  
+version : 0.0.3  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `competences`: [Valeur structurée](https://schema.org/StructuredValue). Compétences du pôle d'innovation numérique.  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `domain`: [Valeur structurée](https://schema.org/StructuredValue). Domaine du pôle d'innovation numérique.  - `id`: Identifiant unique de l'entité  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `logo`: [Valeur structurée](https://schema.org/StructuredValue). Logo du pôle d'innovation numérique.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `relation`: [Valeur structurée](https://schema.org/StructuredValue). Relations du pôle d'innovation numérique.  - `representatives`: [Valeur structurée](https://schema.org/StructuredValue). Représentants du pôle d'innovation numérique.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `socialAccounts`: [Valeur structurée](https://schema.org/StructuredValue). Comptes sociaux du pôle d'innovation numérique.  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type d'entité NGSI. Il doit s'agir de DigitalInnovationHub  - `website`: [URL](https://schema.org/URL). Site web du Digital Innovation Hub.    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `address[object]`: Adresse postale du pôle d'innovation numérique.  . Model: [https://schema.org/PostalAddress](https://schema.org/PostalAddress)- `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `competences[array]`: Compétences du pôle d'innovation numérique.  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `dateSubmitted[string]`: La date et l'heure de cette observation au format ISO8601 UTC.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateUpdated[string]`: La date et l'heure de cette observation au format ISO8601 UTC.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: Une description de cet article  - `domain[array]`: Domaine du centre d'innovation numérique.  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `id[*]`: Identifiant unique de l'entité  - `location[object]`: GeoProperty. GeoJSON Référence ponctuelle à l'emplacement du pôle d'innovation numérique.  . Model: [https://geojson.org/schema/Point.json](https://geojson.org/schema/Point.json)- `logo[string]`: URL du logo du pôle d'innovation numérique.  . Model: [https://schema.org/URL](https://schema.org/URL)- `name[string]`: Le nom de cet élément.  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `relation[array]`: Relations du service Digital Innovation Hub.  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `representatives[array]`: Représentants du pôle d'innovation numérique.  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `socialAccounts[object]`: Comptes sociaux du centre d'innovation numérique.  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type[string]`: Type d'entité NGSI. Il doit s'agir de DigitalInnovationHub  - `website[string]`: Site web du centre d'innovation numérique.  . Model: [https://schema.org/URL](https://schema.org/URL)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
-- `id`  - `type`  ## Description des propriétés du modèle de données  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 DigitalInnovationHub:    
@@ -241,9 +255,14 @@ DigitalInnovationHub:
   x-version: 0.0.3    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
 #### DigitalInnovationHub NGSI-v2 key-values Exemple  
 Voici un exemple de DigitalInnovationHub au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
 	"id": "DigitalInnovationHub:Z6LGtH0B_X_d5NJkJEfB",  
@@ -299,8 +318,10 @@ DigitalInnovationHub:
 	"dateUpdated": "2020-07-07T15:05:59.408Z"  
 }  
 ```  
+</details>  
 #### DigitalInnovationHub NGSI-v2 normalisé Exemple  
 Voici un exemple de DigitalInnovationHub au format JSON-LD tel que normalisé. Ce format est compatible avec la NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
 	"id": "DigitalInnovationHub:Z6LGtH0B_X_d5NJkJEfB",  
@@ -401,169 +422,183 @@ DigitalInnovationHub:
 	}  
 }  
 ```  
+</details>  
 #### DigitalInnovationHub NGSI-LD key-values Exemple  
 Voici un exemple de DigitalInnovationHub au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-	"id": "urn:ngsi-ld:DigitalInnovationHub:DigitalInnovationHub:Z6LGtH0B_X_d5NJkJEfB",  
-	"type": "DigitalInnovationHub",  
-	"title": "Sample DIH",  
-	"website": "https://www.sample-dih.com/",  
-	"logo": "https://www.sample-dih.com/logo.png",  
-	"description": "Digital Innovation Hubs are one-stop-shops that help companies to become more competitive with regard to their business/production processes",  
-	"location": {  
-	"type": "Point",  
+    "id": "urn:ngsi-ld:DigitalInnovationHub:DigitalInnovationHub:Z6LGtH0B_X_d5NJkJEfB",  
+    "type": "DigitalInnovationHub",  
+    "title": "Sample DIH",  
+    "website": "https://www.sample-dih.com/",  
+    "logo": "https://www.sample-dih.com/logo.png",  
+    "description": "Digital Innovation Hubs are one-stop-shops that help companies to become more competitive with regard to their business/production processes",  
+    "location": {  
+        "type": "Point",  
         "coordinates": [  
             43.66481,  
-			7.196545  
+            7.196545  
         ]  
     },  
-	"address": {  
-		"streetAddress": "Viale della Regione Siciliana Nord Ovest",  
-		"addressRegion": "Sicily",  
-		"postalCode": "90146",  
-		"addressCountry": "IT",  
-		"addressLocality": "Palermo"  
-	},  
-	"representatives": [  
-		{  
-			"name": "John",  
-			"surname": "Doe",  
-			"email": "john.doe@sample-dih.com",  
-			"role": "Engineer",  
-			"responsibilities": "Manufacturing engineer"  
-		}  
-	],  
-	"domain": [  
-		"Manufacture of machinery and equipment"  
-	],  
-	"competences": [  
-		"Additive manufacturing (3D printing)"  
-	],  
-	"socialAccounts": {  
-		"linkedin": "https://www.linkedin.com/company/sample-dih",  
-		"facebook": "https://www.facebook.com/sample.dih/",  
-		"twitter": "https://www.twitter.com/sampledih",  
-		"instagram": "https://www.instagram.com/lifeatsampledih"  
-	},  
-	"relation": [  
+    "address": {  
+        "streetAddress": "Viale della Regione Siciliana Nord Ovest",  
+        "addressRegion": "Sicily",  
+        "postalCode": "90146",  
+        "addressCountry": "IT",  
+        "addressLocality": "Palermo"  
+    },  
+    "representatives": [  
+        {  
+            "name": "John",  
+            "surname": "Doe",  
+            "email": "john.doe@sample-dih.com",  
+            "role": "Engineer",  
+            "responsibilities": "Manufacturing engineer"  
+        }  
+    ],  
+    "domain": [  
+        "Manufacture of machinery and equipment"  
+    ],  
+    "competences": [  
+        "Additive manufacturing (3D printing)"  
+    ],  
+    "socialAccounts": {  
+        "linkedin": "https://www.linkedin.com/company/sample-dih",  
+        "facebook": "https://www.facebook.com/sample.dih/",  
+        "twitter": "https://www.twitter.com/sampledih",  
+        "instagram": "https://www.instagram.com/lifeatsampledih"  
+    },  
+    "relation": [  
         {  
             "id": "urn:ngsi-ld:DigitalInnovationHub:id:R5Ju4oO0_X_Jy8GO5d2"  
         },  
         {  
             "id": "urn:ngsi-ld:DigitalInnovationHub:id:D5yr9HT3_X_RH7Fy7H9"  
         }  
-	],  
-	"dateSubmitted": "2020-07-07T15:05:59.408Z",  
-	"dateUpdated": "2020-07-07T15:05:59.408Z",  
-	"@context": [  
-		"https://smart-data-models.github.io/dataModel.DigitalInnovationHub/context.jsonld"  
-	]  
+    ],  
+    "dateSubmitted": "2020-07-07T15:05:59.408Z",  
+    "dateUpdated": "2020-07-07T15:05:59.408Z",  
+    "@context": [  
+        "https://smart-data-models.github.io/dataModel.DigitalInnovationHub/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.DigitalInnovationHub/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details>  
 #### DigitalInnovationHub NGSI-LD normalisé Exemple  
 Voici un exemple de DigitalInnovationHub au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-	"id": "urn:ngsi-ld:DigitalInnovationHub:DigitalInnovationHub:Z6LGtH0B_X_d5NJkJEfB",  
-	"type": "DigitalInnovationHub",  
-	"title": {  
-		"type": "Property",  
-		"value": "Sample DIH"  
-	},  
-	"website": {  
-		"type": "Property",  
-		"value": "https://www.sample-dih.com/"  
-	},  
-	"logo": {  
-		"type": "Property",  
-		"value": "https://www.sample-dih.com/logo.png"  
-	},  
-	"description": {  
-		"type": "Property",  
-		"value": "Digital Innovation Hubs are one-stop-shops that help companies to become more competitive with regard to their business/production processes"  
-	},  
-	"location": {  
-		"type": "Geoproperty",  
-		"value": {  
-			"type": "Point",  
-			"coordinates": [  
-				43.66481,  
-				7.196545  
-			]  
-		}  
-	},  
-	"address": {  
-		"type": "Property",  
-		"value": {  
-			"streetAddress": "Viale della Regione Siciliana Nord Ovest",  
-			"addressRegion": "Sicily",  
-			"postalCode": "90146",  
-			"addressCountry": "IT",  
-			"addressLocality": "Palermo"  
-		}  
-	},  
-	"representatives": {  
-		"type": "Property",  
-		"value": [  
-			{  
-				"name": "John",  
-				"surname": "Doe",  
-				"email": "john.doe@sample-dih.com",  
-				"role": "Engineer",  
-				"responsibilities": "Manufacturing engineer"  
-			}  
-		]  
-	},  
-	"domain": {  
-		"type": "Property",  
-		"value": [  
-			"Manufacture of machinery and equipment"  
-		]  
-	},  
-	"competences": {  
-		"type": "Property",  
-		"value": [  
-			"Additive manufacturing (3D printing)"  
-		]  
-	},  
-	"socialAccounts": {  
-		"type": "Property",  
-		"value": {  
-			"linkedin": "https://www.linkedin.com/company/sample-dih",  
-			"facebook": "https://www.facebook.com/sample.dih/",  
-			"twitter": "https://www.twitter.com/sampledih",  
-			"instagram": "https://www.instagram.com/lifeatsampledih"  
-		}  
-	},  
-	"relation": {  
-		"type": "Relationship",  
-		"value": [  
-			{  
+    "id": "urn:ngsi-ld:DigitalInnovationHub:DigitalInnovationHub:Z6LGtH0B_X_d5NJkJEfB",  
+    "type": "DigitalInnovationHub",  
+    "title": {  
+        "type": "Property",  
+        "value": "Sample DIH"  
+    },  
+    "website": {  
+        "type": "Property",  
+        "value": "https://www.sample-dih.com/"  
+    },  
+    "logo": {  
+        "type": "Property",  
+        "value": "https://www.sample-dih.com/logo.png"  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Digital Innovation Hubs are one-stop-shops that help companies to become more competitive with regard to their business/production processes"  
+    },  
+    "location": {  
+        "type": "Geoproperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                43.66481,  
+                7.196545  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Viale della Regione Siciliana Nord Ovest",  
+            "addressRegion": "Sicily",  
+            "postalCode": "90146",  
+            "addressCountry": "IT",  
+            "addressLocality": "Palermo"  
+        }  
+    },  
+    "representatives": {  
+        "type": "Property",  
+        "value": [  
+            {  
+                "name": "John",  
+                "surname": "Doe",  
+                "email": "john.doe@sample-dih.com",  
+                "role": "Engineer",  
+                "responsibilities": "Manufacturing engineer"  
+            }  
+        ]  
+    },  
+    "domain": {  
+        "type": "Property",  
+        "value": [  
+            "Manufacture of machinery and equipment"  
+        ]  
+    },  
+    "competences": {  
+        "type": "Property",  
+        "value": [  
+            "Additive manufacturing (3D printing)"  
+        ]  
+    },  
+    "socialAccounts": {  
+        "type": "Property",  
+        "value": {  
+            "linkedin": "https://www.linkedin.com/company/sample-dih",  
+            "facebook": "https://www.facebook.com/sample.dih/",  
+            "twitter": "https://www.twitter.com/sampledih",  
+            "instagram": "https://www.instagram.com/lifeatsampledih"  
+        }  
+    },  
+    "relation": {  
+        "type": "Relationship",  
+        "value": [  
+            {  
                 "id": "urn:ngsi-ld:DigitalInnovationHub:id:R5Ju4oO0_X_Jy8GO5d2"  
             },  
             {  
                 "id": "urn:ngsi-ld:DigitalInnovationHub:id:D5yr9HT3_X_RH7Fy7H9"  
             }  
-		]  
-	},  
-	"dateSubmitted": {  
-		"type": "Property",  
-		"value": {  
-			"type": "DateTime",  
-			"value": "2020-07-07T15:05:59.408Z"  
-		}  
-	},  
-	"dateUpdated": {  
-		"type": "Property",  
-		"value": {  
-			"type": "DateTime",  
-			"value": "2020-07-07T15:05:59.408Z"  
-		}  
-	},  
-	"@context": [  
-		"https://smart-data-models.github.io/dataModel.DigitalInnovationHub/context.jsonld"  
-	]  
+        ]  
+    },  
+    "dateSubmitted": {  
+        "type": "Property",  
+        "value": {  
+            "type": "DateTime",  
+            "value": "2020-07-07T15:05:59.408Z"  
+        }  
+    },  
+    "dateUpdated": {  
+        "type": "Property",  
+        "value": {  
+            "type": "DateTime",  
+            "value": "2020-07-07T15:05:59.408Z"  
+        }  
+    },  
+    "@context": [  
+        "https://smart-data-models.github.io/dataModel.DigitalInnovationHub/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.DigitalInnovationHub/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
