@@ -510,7 +510,7 @@ DigitalInnovationHub:
         "value": "Digital Innovation Hubs are one-stop-shops that help companies to become more competitive with regard to their business/production processes"  
     },  
     "location": {  
-        "type": "Geoproperty",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
