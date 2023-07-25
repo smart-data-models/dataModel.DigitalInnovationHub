@@ -1,29 +1,29 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entity: DigitalInnovationHubService  
-===================================<!-- /10-Header -->  
+实体。DigitalInnovationHubService  
+==============================<!-- /10-Header -->  
 <!-- 15-License -->  
-[Open License](https://github.com/smart-data-models//dataModel.DigitalInnovationHub/blob/master/DigitalInnovationHubService/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[开放许可](https://github.com/smart-data-models//dataModel.DigitalInnovationHub/blob/master/DigitalInnovationHubService/LICENSE.md)  
+[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Global description: **Provision of insights and trend on markets to companies to stimulate their internal innovation.**  
-version: 0.0.3  
+全球描述。**向公司提供关于市场的洞察力和趋势，以刺激其内部创新**。  
+版本：0.0.3  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-## List of properties  
+##属性列表  
 
-<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-- `additionalMaterial[array]`: Additional Materials of the Digital Innovation Hub.  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `alternateName[string]`: An alternative name for this item  - `author[string]`: Author of the Digital Innovation Hub Service.  . Model: [https://schema.org/Text](https://schema.org/Text)- `category[string]`: Category of the Digital Innovation Hub Service.  . Model: [https://schema.org/Text](https://schema.org/Text)- `contacts[array]`: Contacts of the Digital Innovation Hub.  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateSubmitted[string]`: The date and time of this observation in ISO8601 UTC format  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateUpdated[string]`: The date and time of this observation in ISO8601 UTC format  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `relation[array]`: Relations of the Digital Innovation Hub Service.  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `seeAlso[*]`: list of uri pointing to additional resources about the item  - `serviceImage[string]`: URL of the image of the Digital Innovation Hub Service.  . Model: [https://schema.org/URL](https://schema.org/URL)- `serviceSubType[string]`: ServiceSubType of the Digital Innovation Hub Service.  . Model: [https://schema.org/Text](https://schema.org/Text)- `serviceType[string]`: ServiceType of the Digital Innovation Hub Service.  . Model: [https://schema.org/Text](https://schema.org/Text)- `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `target[array]`: Targets of the Digital Innovation Hub Service.  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSI entity type. It has to be DigitalInnovationHubService  - `url[string]`: URL of the Digital Innovation Hub Service.  . Model: [https://schema.org/URL](https://schema.org/URL)<!-- /30-PropertiesList -->  
+<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
+- `additionalMaterial[array]`: 数字创新中心的补充材料。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `alternateName[string]`: 这个项目的一个替代名称  - `author[string]`: 数字创新中心服务的作者。  . Model: [https://schema.org/Text](https://schema.org/Text)- `category[string]`: 数字创新中心服务的类别。  . Model: [https://schema.org/Text](https://schema.org/Text)- `contacts[array]`: 数字创新中心的联系人。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `dateSubmitted[string]`: 该观察的日期和时间，采用ISO8601 UTC格式  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateUpdated[string]`: 该观察的日期和时间，采用ISO8601 UTC格式  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: 对这个项目的描述  - `id[*]`: 实体的唯一标识符  - `name[string]`: 这个项目的名称。  - `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  - `relation[array]`: 数字创新中心服务的关系。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `serviceImage[string]`: 数字创新中心服务的图像的URL。  . Model: [https://schema.org/URL](https://schema.org/URL)- `serviceSubType[string]`: 数字创新中心服务的服务子类型。  . Model: [https://schema.org/Text](https://schema.org/Text)- `serviceType[string]`: 数字创新中心服务的服务类型。  . Model: [https://schema.org/Text](https://schema.org/Text)- `source[string]`: 一系列的字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  - `target[array]`: 数字创新中心服务的目标。  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSI实体类型。它必须是DigitalInnovationHubService。  - `url[string]`: 数字创新中心服务的URL。  . Model: [https://schema.org/URL](https://schema.org/URL)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
-Required properties  
+所需属性  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
-## Data Model description of properties  
-Sorted alphabetically (click for details)  
+## 数据模型的属性描述  
+按字母顺序排列（点击查看详情）。  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -308,9 +308,9 @@ DigitalInnovationHubService:
 <!-- 70-MiddleNotes -->  
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
-## Example payloads    
-#### DigitalInnovationHubService NGSI-v2 key-values Example    
-Here is an example of a DigitalInnovationHubService in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+## ＃＃＃＃有效载荷的例子  
+#### DigitalInnovationHubService NGSI-v2 关键值示例  
+这里有一个DigitalInnovationHubService的例子，以JSON-LD格式作为key-values。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -353,8 +353,8 @@ DigitalInnovationHubService:
 }  
 ```  
 </details>  
-#### DigitalInnovationHubService NGSI-v2 normalized Example    
-Here is an example of a DigitalInnovationHubService in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+#### DigitalInnovationHubService NGSI-v2规范化示例  
+下面是一个以JSON-LD格式规范化的DigitalInnovationHubService的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -439,8 +439,8 @@ DigitalInnovationHubService:
 }  
 ```  
 </details>  
-#### DigitalInnovationHubService NGSI-LD key-values Example    
-Here is an example of a DigitalInnovationHubService in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+#### DigitalInnovationHubService NGSI-LD密钥值示例  
+这里有一个DigitalInnovationHubService以JSON-LD格式作为key-values的例子。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -487,8 +487,8 @@ DigitalInnovationHubService:
 }  
 ```  
 </details>  
-#### DigitalInnovationHubService NGSI-LD normalized Example    
-Here is an example of a DigitalInnovationHubService in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+#### DigitalInnovationHubService NGSI-LD规范化实例  
+下面是一个以JSON-LD格式规范化的DigitalInnovationHubService的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -586,7 +586,7 @@ DigitalInnovationHubService:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  

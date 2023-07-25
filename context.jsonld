@@ -1,5 +1,7 @@
 {
     "@context": {
+        "DigitalInnovationHub": "https://smartdatamodels.org/dataModel.DigitalInnovationHub/DigitalInnovationHub",
+        "DigitalInnovationHubService": "https://smartdatamodels.org/dataModel.DigitalInnovationHub/DigitalInnovationHubService",
         "additionalMaterial": "https://smartdatamodels.org/dataModel.DigitalInnovationHub/additionalMaterial",
         "address": "https://smartdatamodels.org/address",
         "alternateName": "https://smartdatamodels.org/alternateName",
@@ -11,6 +13,8 @@
         "dataProvider": "https://smartdatamodels.org/dataProvider",
         "dateCreated": "https://smartdatamodels.org/dateCreated",
         "dateModified": "https://smartdatamodels.org/dateModified",
+        "dateSubmitted": "https://smartdatamodels.org/dataModel.DigitalInnovationHub/dateSubmitted",
+        "dateUpdated": "https://smartdatamodels.org/dataModel.DigitalInnovationHub/dateUpdated",
         "description": "http://purl.org/dc/terms/description",
         "domain": "https://smartdatamodels.org/dataModel.DigitalInnovationHub/domain",
         "id": "@id",

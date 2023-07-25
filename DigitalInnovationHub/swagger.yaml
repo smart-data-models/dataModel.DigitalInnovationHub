@@ -1,5 +1,5 @@
 ---
-# Copyleft (c) 2021 Contributors to Smart Data Models initiative
+# Copyleft (c) 2022 Contributors to Smart Data Models initiative
 # 
 
 
@@ -11,7 +11,7 @@ info:
   description:  |
     Digital Innovation Hubs are one-stop-shops that help companies to become more competitive with regard to their business/production processes.
   title: DigitalInnovationHub
-  version: "0.0.2"
+  version: "0.0.3"
 openapi: "3.0.0"
 
 paths: 

@@ -1,0 +1,3 @@
+/* (Beta) Export of data model DigitalInnovationHub of the subject dataModel.DigitalInnovationHub for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE DigitalInnovationHub_type AS ENUM ('DigitalInnovationHub');
+CREATE TABLE DigitalInnovationHub (address json, alternateName text, areaServed text, competences json, dataProvider text, dateCreated timestamp, dateModified timestamp, dateSubmitted timestamp, dateUpdated timestamp, description text, domain json, id text, location json, logo text, name text, owner json, relation json, representatives json, seeAlso json, socialAccounts json, source text, type DigitalInnovationHub_type, website text);

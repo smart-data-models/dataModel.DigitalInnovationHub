@@ -1,5 +1,5 @@
 {
-	"id": "urn:ngsi-ld:DigitalInnovationHub:DigitalInnovationHub:Z6LGtH0B_X_d5NJkJEfB",
+	"id": "DigitalInnovationHub:Z6LGtH0B_X_d5NJkJEfB",
 	"type": "DigitalInnovationHub",
 	"title": {
 		"type": "Text",
@@ -10,18 +10,25 @@
 		"value": "https://www.sample-dih.com/"
 	},
 	"logo": {
-		"type": "StructuredValue",
-		"value": {
-			"base64Data": "iVBORw0KGgM3ceusb/AAAAAElFTkSuQmCC",
-			"fileName": "logo.png"
-		}
+		"type": "URL",
+		"value": "https://www.sample-dih.com/logo.png"
 	},
 	"description": {
 		"type": "Text",
 		"value": "Digital Innovation Hubs are one-stop-shops that help companies to become more competitive with regard to their business/production processes"
 	},
+	"location": {
+		"type": "geo:json",
+		"value": {
+			"type": "Point",
+			"coordinates": [
+				43.66481,
+				7.196545
+			]
+		}
+	},
 	"address": {
-		"type": "StructuredValue",
+		"type": "PostalAddress",
 		"value": {
 			"streetAddress": "Viale della Regione Siciliana Nord Ovest",
 			"addressRegion": "Sicily",
@@ -32,16 +39,18 @@
 	},
 	"representatives": {
 		"type": "array",
-		"value": [{
-			"name": "John",
-			"surname": "Doe",
-			"email": "john.doe@sample-dih.com",
-			"role": "Engineer",
-			"responsibilities": "Manufacturing engineer"
-		}]
+		"value": [
+			{
+				"name": "John",
+				"surname": "Doe",
+				"email": "john.doe@sample-dih.com",
+				"role": "Engineer",
+				"responsibilities": "Manufacturing engineer"
+			}
+		]
 	},
 	"domain": {
-		"type": "Property",
+		"type": "array",
 		"value": [
 			"Manufacture of machinery and equipment"
 		]
@@ -62,16 +71,28 @@
 		}
 	},
 	"relation": {
-		"type": "StructuredValue",
+		"type": "array",
 		"value": [
 			{
-				"relationType": "dih",
-				"relationIdentifier": "b6IZuH0B_X_d5NJkB0eY"
+				"id": "DigitalInnovationHub:R5Ju4oO0_X_Jy8GO5d2"
 			},
 			{
-				"relationType": "service",
-				"relationIdentifier": "b6IZuH0B_X_d5NJkB0eX"
+				"id": "DigitalInnovationHub:D5yr9HT3_X_RH7Fy7H9"
 			}
 		]
+	},
+	"dateSubmitted": {
+		"type": "DateTime",
+		"value": {
+			"type": "DateTime",
+			"value": "2020-05-07T15:00:13.408Z"
+		}
+	},
+	"dateUpdated": {
+		"type": "DateTime",
+		"value": {
+			"type": "DateTime",
+			"value": "2020-07-07T15:05:59.408Z"
+		}
 	}
 }

@@ -10,11 +10,8 @@
 		"value": "Provision of insights and trend on markets to companies to stimulate their internal innovation"
 	},
 	"serviceImage": {
-		"type": "StructuredValue",
-		"value": {
-			"base64Data": "iVBORa1ytHEAAAAAElFTkSuQmCC",
-			"fileName": "it.png"
-		}
+		"type": "URL",
+		"value": "https://www.sample-dih.com/logo.png"
 	},
 	"category": {
 		"type": "Text",
@@ -41,33 +38,45 @@
 	},
 	"additionalMaterial": {
 		"type": "array",
-		"value": [{
-			"label": "Brochure",
-			"url": "https://www.sample-dih.com/trend-watching/brochure.pdf"
-		}]
+		"value": [
+			{
+				"label": "Brochure",
+				"url": "https://www.sample-dih.com/trend-watching/brochure.pdf"
+			}
+		]
 	},
 	"contacts": {
 		"type": "array",
-		"value": [{
-			"name": "Mark Johnson",
-			"email": "mark.johnson@sample-dih.it"
-		}]
+		"value": [
+			{
+				"name": "Mark Johnson",
+				"email": "mark.johnson@sample-dih.it"
+			}
+		]
 	},
 	"author": {
 		"type": "Text",
 		"value": "John Doe"
 	},
 	"relation": {
-		"type": "StructuredValue",
+		"type": "array",
 		"value": [
 			{
-				"relationType": "dih",
-				"relationIdentifier": "b6IZuH0B_X_d5NJkB0eY"
+				"id": "urn:ngsi-ld:DigitalInnovationHubService:id:R5Ju4oO0_X_Jy8GO5d2"
 			},
 			{
-				"relationType": "service",
-				"relationIdentifier": "b6IZuH0B_X_d5NJkB0eX"
+				"id": "urn:ngsi-ld:DigitalInnovationHubService:id:D5yr9HT3_X_RH7Fy7H9"
 			}
 		]
+	},
+	"dateSubmitted": {
+		"type": "Date-Time",
+		"value": "2020-07-07T15:05:59.408Z"
+		
+	},
+	"dateUpdated": {
+		"type": "Date-Time",
+		"value": "2020-07-07T15:05:59.408Z"
+		
 	}
 }

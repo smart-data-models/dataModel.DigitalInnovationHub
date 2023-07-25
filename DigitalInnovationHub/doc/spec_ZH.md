@@ -1,29 +1,29 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entité : DigitalInnovationHub  
-=============================<!-- /10-Header -->  
+实体。数字创新中心（DigitalInnovationHub  
+==============================<!-- /10-Header -->  
 <!-- 15-License -->  
-[Licence ouverte] (https://github.com/smart-data-models//dataModel.DigitalInnovationHub/blob/master/DigitalInnovationHub/LICENSE.md)  
-[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[开放许可](https://github.com/smart-data-models//dataModel.DigitalInnovationHub/blob/master/DigitalInnovationHub/LICENSE.md)  
+[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Description globale : **Les centres d'innovation numérique sont des guichets uniques qui aident les entreprises à devenir plus compétitives en ce qui concerne leurs processus d'affaires/de production**.  
-version : 0.0.3  
+全球描述。**数字创新中心是一站式服务，帮助企业在业务/生产流程方面更具竞争力。  
+版本：0.0.3  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-## Liste des propriétés  
+##属性列表  
 
-<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
-- `address[object]`: Adresse postale du pôle d'innovation numérique.  . Model: [https://schema.org/PostalAddress](https://schema.org/PostalAddress)- `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `competences[array]`: Compétences du pôle d'innovation numérique.  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `dateSubmitted[string]`: La date et l'heure de cette observation au format ISO8601 UTC.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateUpdated[string]`: La date et l'heure de cette observation au format ISO8601 UTC.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: Une description de cet article  - `domain[array]`: Domaine du centre d'innovation numérique.  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `id[*]`: Identifiant unique de l'entité  - `location[object]`: GeoProperty. GeoJSON Référence ponctuelle à l'emplacement du pôle d'innovation numérique.  . Model: [https://geojson.org/schema/Point.json](https://geojson.org/schema/Point.json)- `logo[string]`: URL du logo du pôle d'innovation numérique.  . Model: [https://schema.org/URL](https://schema.org/URL)- `name[string]`: Le nom de cet élément.  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `relation[array]`: Relations du service Digital Innovation Hub.  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `representatives[array]`: Représentants du pôle d'innovation numérique.  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `socialAccounts[object]`: Comptes sociaux du centre d'innovation numérique.  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type[string]`: Type d'entité NGSI. Il doit s'agir de DigitalInnovationHub  - `website[string]`: Site web du centre d'innovation numérique.  . Model: [https://schema.org/URL](https://schema.org/URL)<!-- /30-PropertiesList -->  
+<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
+- `address[object]`: 数字创新中心的邮政地址。  . Model: [https://schema.org/PostalAddress](https://schema.org/PostalAddress)- `alternateName[string]`: 这个项目的一个替代名称  - `areaServed[string]`: 提供服务或提供项目的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `competences[array]`: 数字创新中心的能力。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `dateSubmitted[string]`: 该观察的日期和时间，采用ISO8601 UTC格式  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateUpdated[string]`: 该观察的日期和时间，采用ISO8601 UTC格式  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: 对这个项目的描述  - `domain[array]`: 数字创新中心的领域。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `id[*]`: 实体的唯一标识符  - `location[object]`: GeoProperty。GeoJSON 数字创新中心位置的点参考。  . Model: [https://geojson.org/schema/Point.json](https://geojson.org/schema/Point.json)- `logo[string]`: 数字创新中心的标志的URL。  . Model: [https://schema.org/URL](https://schema.org/URL)- `name[string]`: 这个项目的名称。  - `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  - `relation[array]`: 数字创新中心服务的关系。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `representatives[array]`: 数字创新中心的代表。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `socialAccounts[object]`: 数字创新中心的社会账户。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `source[string]`: 提供实体数据原始来源的一连串字符，作为一个URL。建议为源提供者的完全合格域名，或源对象的URL。  - `type[string]`: NGSI实体类型。它必须是DigitalInnovationHub。  - `website[string]`: 数字创新中心的网站。  . Model: [https://schema.org/URL](https://schema.org/URL)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
-Propriétés requises  
+所需属性  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
-## Description des propriétés du modèle de données  
-Classés par ordre alphabétique (cliquez pour plus de détails)  
+## 数据模型的属性描述  
+按字母顺序排列（点击查看详情）。  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -259,9 +259,9 @@ DigitalInnovationHub:
 <!-- 70-MiddleNotes -->  
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
-## Exemples de charges utiles  
-#### DigitalInnovationHub NGSI-v2 key-values Exemple  
-Voici un exemple de DigitalInnovationHub au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+## ＃＃＃＃有效载荷的例子  
+#### DigitalInnovationHub NGSI-v2 关键值示例  
+这里是一个以JSON-LD格式作为关键值的DigitalInnovationHub的例子。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -319,8 +319,8 @@ DigitalInnovationHub:
 }  
 ```  
 </details>  
-#### DigitalInnovationHub NGSI-v2 normalisé Exemple  
-Voici un exemple de DigitalInnovationHub au format JSON-LD tel que normalisé. Ce format est compatible avec la NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+#### DigitalInnovationHub NGSI-v2规范化示例  
+下面是一个以JSON-LD格式规范化的DigitalInnovationHub的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -423,8 +423,8 @@ DigitalInnovationHub:
 }  
 ```  
 </details>  
-#### DigitalInnovationHub NGSI-LD key-values Exemple  
-Voici un exemple de DigitalInnovationHub au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+#### DigitalInnovationHub NGSI-LD关键值示例  
+这里有一个DigitalInnovationHub的例子，是JSON-LD格式的key-values。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -486,8 +486,8 @@ DigitalInnovationHub:
 }  
 ```  
 </details>  
-#### DigitalInnovationHub NGSI-LD normalisé Exemple  
-Voici un exemple de DigitalInnovationHub au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+#### DigitalInnovationHub NGSI-LD规范化示例  
+下面是一个以JSON-LD格式规范化的DigitalInnovationHub的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -597,7 +597,7 @@ DigitalInnovationHub:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
