@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0.3",
+  "$schemaVersion": "0.0.4",
   "$id": "https://smart-data-models.github.io/dataModel.DIH/DigitalInnovationHub/schema.json",
   "title": "Smart Data Models - Digital Innovation Hub",
   "description": "Digital Innovation Hubs are one-stop-shops that help companies to become more competitive with regard to their business/production processes.",
@@ -29,14 +29,6 @@
         "logo": {
           "type": "string",
           "description": "Property. Model:'https://schema.org/URL'. URL of the logo of the Digital Innovation Hub."
-        },
-        "location": {
-          "type": "object",
-          "description": "GeoProperty. Model:'https://geojson.org/schema/Point.json'. GeoJSON Point reference to the location of the Digital Innovation Hub."
-        },
-        "address": {
-          "type": "object",
-          "description": "Property. Model:'https://schema.org/PostalAddress'. PostalAddress of the Digital Innovation Hub."
         },
         "representatives": {
           "type": "array",
