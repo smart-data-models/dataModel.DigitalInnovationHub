@@ -2,7 +2,7 @@ DigitalInnovationHubService:
   description: Provision of insights and trend on markets to companies to stimulate their internal innovation.
   properties:
     additionalMaterial:
-      description: Additional Materials of the Digital Innovation Hub.
+      description: 'Property. Model:''https://schema.org/StructuredValue''. Additional Materials of the Digital Innovation Hub.'
       items:
         - properties:
             label:
@@ -14,25 +14,62 @@ DigitalInnovationHubService:
       x-ngsi:
         model: https://schema.org/StructuredValue
         type: Property
+    address:
+      description: The mailing address
+      properties:
+        addressCountry:
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''
+          type: string
+        addressLocality:
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''
+          type: string
+        addressRegion:
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''
+          type: string
+        district:
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'
+          type: string
+        postOfficeBoxNumber:
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''
+          type: string
+        postalCode:
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''
+          type: string
+        streetAddress:
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''
+          type: string
+        streetNr:
+          description: Number identifying a specific property on a public street.
+          type: string
+      type: object
+      x-ngsi:
+        model: https://schema.org/address
+        type: Property
     alternateName:
       description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
+    areaServed:
+      description: The geographic area where a service or offered item is provided
+      type: string
+      x-ngsi:
+        model: https://schema.org/Text
+        type: Property
     author:
-      description: Author of the Digital Innovation Hub Service.
+      description: 'Property. Model:''https://schema.org/Text''. Author of the Digital Innovation Hub Service.'
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
     category:
-      description: Category of the Digital Innovation Hub Service.
+      description: 'Property. Model:''https://schema.org/Text''. Category of the Digital Innovation Hub Service.'
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
     contacts:
-      description: Contacts of the Digital Innovation Hub.
+      description: 'Property. Model:''https://schema.org/StructuredValue''. Contacts of the Digital Innovation Hub.'
       items:
         - description: Property. All contact elements in data models unless explicitly stated according to schema.org
           properties:
@@ -119,14 +156,14 @@ DigitalInnovationHubService:
       x-ngsi:
         type: Property
     dateSubmitted:
-      description: The date and time of this observation in ISO8601 UTC format
+      description: 'Property. The date and time of this observation in ISO8601 UTC format. Model:''https://schema.org/DateTime'''
       format: date-time
       type: string
       x-ngsi:
         model: https://schema.org/DateTime
         type: Property
     dateUpdated:
-      description: The date and time of this observation in ISO8601 UTC format
+      description: 'Property. The date and time of this observation in ISO8601 UTC format. Model:''https://schema.org/DateTime'''
       format: date-time
       type: string
       x-ngsi:
@@ -150,6 +187,159 @@ DigitalInnovationHubService:
       description: Unique identifier of the entity
       x-ngsi:
         type: Property
+    location:
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
+      oneOf:
+        - description: GeoProperty. Geojson reference to the item. Point
+          properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                type: number
+              minItems: 2
+              type: array
+            type:
+              enum:
+                - Point
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON Point
+          type: object
+        - description: GeoProperty. Geojson reference to the item. LineString
+          properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                items:
+                  type: number
+                minItems: 2
+                type: array
+              minItems: 2
+              type: array
+            type:
+              enum:
+                - LineString
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON LineString
+          type: object
+        - description: GeoProperty. Geojson reference to the item. Polygon
+          properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                items:
+                  items:
+                    type: number
+                  minItems: 2
+                  type: array
+                minItems: 4
+                type: array
+              type: array
+            type:
+              enum:
+                - Polygon
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON Polygon
+          type: object
+        - description: GeoProperty. Geojson reference to the item. MultiPoint
+          properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                items:
+                  type: number
+                minItems: 2
+                type: array
+              type: array
+            type:
+              enum:
+                - MultiPoint
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON MultiPoint
+          type: object
+        - description: GeoProperty. Geojson reference to the item. MultiLineString
+          properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                items:
+                  items:
+                    type: number
+                  minItems: 2
+                  type: array
+                minItems: 2
+                type: array
+              type: array
+            type:
+              enum:
+                - MultiLineString
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON MultiLineString
+          type: object
+        - description: GeoProperty. Geojson reference to the item. MultiLineString
+          properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                items:
+                  items:
+                    items:
+                      type: number
+                    minItems: 2
+                    type: array
+                  minItems: 4
+                  type: array
+                type: array
+              type: array
+            type:
+              enum:
+                - MultiPolygon
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON MultiPolygon
+          type: object
+      x-ngsi:
+        type: GeoProperty
     name:
       description: The name of this item.
       type: string
@@ -164,7 +354,7 @@ DigitalInnovationHubService:
       x-ngsi:
         type: Property
     relation:
-      description: Relations of the Digital Innovation Hub Service.
+      description: 'Property. Model:''https://schema.org/StructuredValue''. Relations of the Digital Innovation Hub Service.'
       items:
         - properties:
             alternateName:
@@ -218,20 +408,20 @@ DigitalInnovationHubService:
       x-ngsi:
         type: Property
     serviceImage:
-      description: URL of the image of the Digital Innovation Hub Service.
+      description: 'Property. Model:''https://schema.org/URL''. URL of the image of the Digital Innovation Hub Service.'
       format: uri
       type: string
       x-ngsi:
         model: https://schema.org/URL
         type: Property
     serviceSubType:
-      description: ServiceSubType of the Digital Innovation Hub Service.
+      description: 'Property. Model:''https://schema.org/Text''. ServiceSubType of the Digital Innovation Hub Service.'
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
     serviceType:
-      description: ServiceType of the Digital Innovation Hub Service.
+      description: 'Property. Model:''https://schema.org/Text''. ServiceType of the Digital Innovation Hub Service.'
       type: string
       x-ngsi:
         model: https://schema.org/Text
@@ -242,7 +432,7 @@ DigitalInnovationHubService:
       x-ngsi:
         type: Property
     target:
-      description: Targets of the Digital Innovation Hub Service.
+      description: 'Property. Model:''https://schema.org/Text''. Targets of the Digital Innovation Hub Service.'
       items:
         type: string
       type: array
@@ -250,14 +440,14 @@ DigitalInnovationHubService:
         model: https://schema.org/Text
         type: Property
     type:
-      description: NGSI entity type. It has to be DigitalInnovationHubService
+      description: Property. NGSI entity type. It has to be DigitalInnovationHubService
       enum:
         - DigitalInnovationHubService
       type: string
       x-ngsi:
         type: Property
     url:
-      description: URL of the Digital Innovation Hub Service.
+      description: 'Property. Model:''https://schema.org/URL''. URL of the Digital Innovation Hub Service.'
       type: string
       x-ngsi:
         model: https://schema.org/URL
@@ -271,4 +461,4 @@ DigitalInnovationHubService:
   x-license-url: https://github.com/smart-data-models/dataModel.DigitalInnovationHub/blob/master/DigitalInnovationHubService/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.DIH/DigitalInnovationHubService/schema.json
   x-model-tags: DIH
-  x-version: 0.0.3
+  x-version: 0.0.2
