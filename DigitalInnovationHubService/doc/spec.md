@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: The post office box number for PO box addresses. For example, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: The postal code. For example, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: The street address  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Number identifying a specific property on a public street    
 - `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `author[string]`: Author of the Digital Innovation Hub Service  . Model: [https://schema.org/Text](https://schema.org/Text)- `category[string]`: Category of the Digital Innovation Hub Service  . Model: [https://schema.org/Text](https://schema.org/Text)- `contacts[array]`: Contacts of the Digital Innovation Hub  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `dateSubmitted[date-time]`: The date and time of this observation in ISO8601 UTC format  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateUpdated[date-time]`: The date and time of this observation in ISO8601 UTC format  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name[string]`: The name of this item  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `relation[array]`: Relations of the Digital Innovation Hub Service  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `seeAlso[*]`: list of uri pointing to additional resources about the item  - `serviceImage[uri]`: URL of the image of the Digital Innovation Hub Service  . Model: [https://schema.org/URL](https://schema.org/URL)- `serviceSubType[string]`: ServiceSubType of the Digital Innovation Hub Service  . Model: [https://schema.org/Text](https://schema.org/Text)- `serviceType[string]`: ServiceType of the Digital Innovation Hub Service  . Model: [https://schema.org/Text](https://schema.org/Text)- `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `target[array]`: Targets of the Digital Innovation Hub Service  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSI entity type. It has to be DigitalInnovationHubService  - `url[string]`: URL of the Digital Innovation Hub Service  . Model: [https://schema.org/URL](https://schema.org/URL)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
@@ -144,11 +145,17 @@ DigitalInnovationHubService:
                 anyOf:    
                   - description: Array of identifiers format of any NGSI entity    
                     items:    
+                      maxLength: 256    
+                      minLength: 1    
+                      pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+                      type: string    
                     type: array    
                     x-ngsi:    
                       type: Property    
                   - description: Array of identifiers format of any NGSI entity    
                     items:    
+                      format: uri    
+                      type: string    
                     type: array    
                     x-ngsi:    
                       type: Property    
@@ -159,8 +166,9 @@ DigitalInnovationHubService:
               availableLanguage:    
                 anyOf:    
                   - anyOf:    
-                      -    
-                      -    
+                      - type: string    
+                      - items:    
+                        type: array    
                 description: 'A language someone may use with or at the item, service or place. Please use one of the language codes from the IETF BCP 47 standard. It is implemented the Text option but it could be also Language'    
                 x-ngsi:    
                   model: http://schema.org/availableLanguage    
@@ -169,6 +177,7 @@ DigitalInnovationHubService:
                 anyOf:    
                   - type: string    
                   - items:    
+                      type: string    
                     type: array    
                 description: An option available on this contact point (e.g. a toll-free number or support for hearing-impaired callers)    
                 x-ngsi:    
