@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: 用于邮政信箱地址的邮政信箱号码。例如：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: 邮政编码。例如：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 标识公共街道上特定房产的编号    
 - `alternateName[string]`: 该项目的替代名称  - `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `author[string]`: 数字创新中心服务的作者  . Model: [https://schema.org/Text](https://schema.org/Text)- `category[string]`: 数字创新中心服务类别  . Model: [https://schema.org/Text](https://schema.org/Text)- `contacts[array]`: 数字创新中心的联系方式  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `dateSubmitted[date-time]`: 以 ISO8601 UTC 格式表示的观测日期和时间  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateUpdated[date-time]`: 以 ISO8601 UTC 格式表示的观测日期和时间  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: 项目描述  - `id[*]`: 实体的唯一标识符  - `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `name[string]`: 该项目的名称  - `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  - `relation[array]`: 数字创新中心服务的关系  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `serviceImage[uri]`: 数字创新中心服务图像的 URL  . Model: [https://schema.org/URL](https://schema.org/URL)- `serviceSubType[string]`: 数字创新中心服务的服务子类型  . Model: [https://schema.org/Text](https://schema.org/Text)- `serviceType[string]`: 数字创新中心服务的服务类型  . Model: [https://schema.org/Text](https://schema.org/Text)- `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `target[array]`: 数字创新中心服务的目标  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSI 实体类型。必须是 DigitalInnovationHubService  - `url[string]`: 数字创新中心服务的网址  . Model: [https://schema.org/URL](https://schema.org/URL)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
@@ -144,11 +145,17 @@ DigitalInnovationHubService:
                 anyOf:    
                   - description: Array of identifiers format of any NGSI entity    
                     items:    
+                      maxLength: 256    
+                      minLength: 1    
+                      pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+                      type: string    
                     type: array    
                     x-ngsi:    
                       type: Property    
                   - description: Array of identifiers format of any NGSI entity    
                     items:    
+                      format: uri    
+                      type: string    
                     type: array    
                     x-ngsi:    
                       type: Property    
@@ -159,8 +166,9 @@ DigitalInnovationHubService:
               availableLanguage:    
                 anyOf:    
                   - anyOf:    
-                      -    
-                      -    
+                      - type: string    
+                      - items:    
+                        type: array    
                 description: 'A language someone may use with or at the item, service or place. Please use one of the language codes from the IETF BCP 47 standard. It is implemented the Text option but it could be also Language'    
                 x-ngsi:    
                   model: http://schema.org/availableLanguage    
@@ -169,6 +177,7 @@ DigitalInnovationHubService:
                 anyOf:    
                   - type: string    
                   - items:    
+                      type: string    
                     type: array    
                 description: An option available on this contact point (e.g. a toll-free number or support for hearing-impaired callers)    
                 x-ngsi:    
