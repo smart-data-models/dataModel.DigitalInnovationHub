@@ -22,7 +22,8 @@
 	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: Die Straßenanschrift  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `author[string]`: Autor des Digital Innovation Hub Service  . Model: [https://schema.org/Text](https://schema.org/Text)- `category[string]`: Kategorie des Digital Innovation Hub Service  . Model: [https://schema.org/Text](https://schema.org/Text)- `contacts[array]`: Kontakte des Digital Innovation Hub  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `dateSubmitted[date-time]`: Das Datum und die Uhrzeit dieser Beobachtung im ISO8601 UTC-Format  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateUpdated[date-time]`: Das Datum und die Uhrzeit dieser Beobachtung im ISO8601 UTC-Format  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: Eine Beschreibung dieses Artikels  - `id[*]`: Eindeutiger Bezeichner der Entität  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `relation[array]`: Beziehungen des Digital Innovation Hub Service  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `serviceImage[uri]`: URL des Bildes des Digital Innovation Hub Service  . Model: [https://schema.org/URL](https://schema.org/URL)- `serviceSubType[string]`: ServiceSubType des Digital Innovation Hub Service  . Model: [https://schema.org/Text](https://schema.org/Text)- `serviceType[string]`: ServiceTyp des Digital Innovation Hub Service  . Model: [https://schema.org/Text](https://schema.org/Text)- `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `target[array]`: Ziele des Digital Innovation Hub Service  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSI-Entitätstyp. Es muss DigitalInnovationHubService sein.  - `url[string]`: URL des Digital Innovation Hub Service  . Model: [https://schema.org/URL](https://schema.org/URL)<!-- /30-PropertiesList -->  
+	- `streetNr[string]`: Nummer zur Identifizierung eines bestimmten Grundstücks an einer öffentlichen Straße    
+- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `author[string]`: Autor des Digital Innovation Hub Service  . Model: [https://schema.org/Text](https://schema.org/Text)- `category[string]`: Kategorie des Digital Innovation Hub Service  . Model: [https://schema.org/Text](https://schema.org/Text)- `contacts[array]`: Kontakte des Digital Innovation Hub  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `dateSubmitted[date-time]`: Das Datum und die Uhrzeit dieser Beobachtung im ISO8601 UTC-Format  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateUpdated[date-time]`: Das Datum und die Uhrzeit dieser Beobachtung im ISO8601 UTC-Format  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: Eine Beschreibung dieses Artikels  - `id[*]`: Eindeutiger Bezeichner der Entität  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `relation[array]`: Beziehungen des Digital Innovation Hub Service  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `serviceImage[uri]`: URL des Bildes des Digital Innovation Hub Service  . Model: [https://schema.org/URL](https://schema.org/URL)- `serviceSubType[string]`: ServiceSubType des Digital Innovation Hub Service  . Model: [https://schema.org/Text](https://schema.org/Text)- `serviceType[string]`: ServiceTyp des Digital Innovation Hub Service  . Model: [https://schema.org/Text](https://schema.org/Text)- `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `target[array]`: Ziele des Digital Innovation Hub Service  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSI-Entitätstyp. Es muss DigitalInnovationHubService sein.  - `url[string]`: URL des Digital Innovation Hub Service  . Model: [https://schema.org/URL](https://schema.org/URL)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -144,11 +145,17 @@ DigitalInnovationHubService:
                 anyOf:    
                   - description: Array of identifiers format of any NGSI entity    
                     items:    
+                      maxLength: 256    
+                      minLength: 1    
+                      pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+                      type: string    
                     type: array    
                     x-ngsi:    
                       type: Property    
                   - description: Array of identifiers format of any NGSI entity    
                     items:    
+                      format: uri    
+                      type: string    
                     type: array    
                     x-ngsi:    
                       type: Property    
@@ -159,8 +166,9 @@ DigitalInnovationHubService:
               availableLanguage:    
                 anyOf:    
                   - anyOf:    
-                      -    
-                      -    
+                      - type: string    
+                      - items:    
+                        type: array    
                 description: 'A language someone may use with or at the item, service or place. Please use one of the language codes from the IETF BCP 47 standard. It is implemented the Text option but it could be also Language'    
                 x-ngsi:    
                   model: http://schema.org/availableLanguage    
@@ -169,6 +177,7 @@ DigitalInnovationHubService:
                 anyOf:    
                   - type: string    
                   - items:    
+                      type: string    
                     type: array    
                 description: An option available on this contact point (e.g. a toll-free number or support for hearing-impaired callers)    
                 x-ngsi:    
