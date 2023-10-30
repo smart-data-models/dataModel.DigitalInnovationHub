@@ -53,28 +53,24 @@
                 "additionalMaterial": {
                     "type": "array",
                     "description": "Property. Model:'https://schema.org/StructuredValue'. Additional Materials of the Digital Innovation Hub",
-                    "items": [
-                        {
-                            "type": "object",
-                            "properties": {
-                                "label": {
-                                    "type": "string"
-                                },
-                                "url": {
-                                    "type": "string"
-                                }
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "label": {
+                                "type": "string"
+                            },
+                            "url": {
+                                "type": "string"
                             }
                         }
-                    ]
+                    }
                 },
                 "contacts": {
                     "type": "array",
                     "description": "Property. Model:'https://schema.org/StructuredValue'. Contacts of the Digital Innovation Hub",
-                    "items": [
-                        {
-                            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Contact-Commons"
-                        }
-                    ]
+                    "items": {
+                        "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Contact-Commons"
+                    }
                 },
                 "author": {
                     "type": "string",
@@ -83,11 +79,9 @@
                 "relation": {
                     "type": "array",
                     "description": "Property. Model:'https://schema.org/StructuredValue'. Relations of the Digital Innovation Hub Service",
-                    "items": [
-                        {
-                            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-                        }
-                    ]
+                    "items": {
+                        "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+                    }
                 },
                 "dateSubmitted": {
                     "type": "string",
