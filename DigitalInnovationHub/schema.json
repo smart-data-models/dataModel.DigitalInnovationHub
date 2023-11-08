@@ -33,46 +33,40 @@
                 "representatives": {
                     "type": "array",
                     "description": "Property. Model:'https://schema.org/StructuredValue'. Representatives of the Digital Innovation Hub",
-                    "items": [
-                        {
-                            "type": "object",
-                            "properties": {
-                                "name": {
-                                    "type": "string"
-                                },
-                                "surname": {
-                                    "type": "string"
-                                },
-                                "email": {
-                                    "type": "string"
-                                },
-                                "role": {
-                                    "type": "string"
-                                },
-                                "responsibilities": {
-                                    "type": "string"
-                                }
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "type": "string"
+                            },
+                            "surname": {
+                                "type": "string"
+                            },
+                            "email": {
+                                "type": "string"
+                            },
+                            "role": {
+                                "type": "string"
+                            },
+                            "responsibilities": {
+                                "type": "string"
                             }
                         }
-                    ]
+                    }
                 },
                 "domain": {
                     "type": "array",
                     "description": "Property. Model:'https://schema.org/StructuredValue'. Domain of the Digital Innovation Hub",
-                    "items": [
-                        {
-                            "type": "string"
-                        }
-                    ]
+                    "items": {
+                        "type": "string"
+                    }
                 },
                 "competences": {
                     "type": "array",
                     "description": "Property. Model:'https://schema.org/StructuredValue'. Competences of the Digital Innovation Hub",
-                    "items": [
-                        {
-                            "type": "string"
-                        }
-                    ]
+                    "items": {
+                        "type": "string"
+                    }
                 },
                 "socialAccounts": {
                     "type": "object",
@@ -95,11 +89,9 @@
                 "relation": {
                     "type": "array",
                     "description": "Property. Model:'https://schema.org/StructuredValue'. Relations of the Digital Innovation Hub Service",
-                    "items": [
-                        {
-                            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-                        }
-                    ]
+                    "items": {
+                        "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+                    }
                 },
                 "dateSubmitted": {
                     "type": "string",
