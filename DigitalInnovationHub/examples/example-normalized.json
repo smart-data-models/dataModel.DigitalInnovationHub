@@ -1,98 +1,92 @@
 {
-	"id": "DigitalInnovationHub:Z6LGtH0B_X_d5NJkJEfB",
-	"type": "DigitalInnovationHub",
-	"title": {
-		"type": "Text",
-		"value": "Sample DIH"
-	},
-	"website": {
-		"type": "URL",
-		"value": "https://www.sample-dih.com/"
-	},
-	"logo": {
-		"type": "URL",
-		"value": "https://www.sample-dih.com/logo.png"
-	},
-	"description": {
-		"type": "Text",
-		"value": "Digital Innovation Hubs are one-stop-shops that help companies to become more competitive with regard to their business/production processes"
-	},
-	"location": {
-		"type": "geo:json",
-		"value": {
-			"type": "Point",
-			"coordinates": [
-				43.66481,
-				7.196545
-			]
-		}
-	},
-	"address": {
-		"type": "PostalAddress",
-		"value": {
-			"streetAddress": "Viale della Regione Siciliana Nord Ovest",
-			"addressRegion": "Sicily",
-			"postalCode": "90146",
-			"addressCountry": "IT",
-			"addressLocality": "Palermo"
-		}
-	},
-	"representatives": {
-		"type": "array",
-		"value": [
-			{
-				"name": "John",
-				"surname": "Doe",
-				"email": "john.doe@sample-dih.com",
-				"role": "Engineer",
-				"responsibilities": "Manufacturing engineer"
-			}
-		]
-	},
-	"domain": {
-		"type": "array",
-		"value": [
-			"Manufacture of machinery and equipment"
-		]
-	},
-	"competences": {
-		"type": "array",
-		"value": [
-			"Additive manufacturing (3D printing)"
-		]
-	},
-	"socialAccounts": {
-		"type": "StructuredValue",
-		"value": {
-			"linkedin": "https://www.linkedin.com/company/sample-dih",
-			"facebook": "https://www.facebook.com/sample.dih/",
-			"twitter": "https://www.twitter.com/sampledih",
-			"instagram": "https://www.instagram.com/lifeatsampledih"
-		}
-	},
-	"relation": {
-		"type": "array",
-		"value": [
-			{
-				"id": "DigitalInnovationHub:R5Ju4oO0_X_Jy8GO5d2"
-			},
-			{
-				"id": "DigitalInnovationHub:D5yr9HT3_X_RH7Fy7H9"
-			}
-		]
-	},
-	"dateSubmitted": {
-		"type": "DateTime",
-		"value": {
-			"type": "DateTime",
-			"value": "2020-05-07T15:00:13.408Z"
-		}
-	},
-	"dateUpdated": {
-		"type": "DateTime",
-		"value": {
-			"type": "DateTime",
-			"value": "2020-07-07T15:05:59.408Z"
-		}
-	}
+  "id": "DigitalInnovationHub:Z6LGtH0B_X_d5NJkJEfB",
+  "type": "DigitalInnovationHub",
+  "title": {
+    "type": "Text",
+    "value": "Sample DIH"
+  },
+  "website": {
+    "type": "Text",
+    "value": "https://www.sample-dih.com/"
+  },
+  "logo": {
+    "type": "Text",
+    "value": "https://www.sample-dih.com/logo.png"
+  },
+  "description": {
+    "type": "Text",
+    "value": "Digital Innovation Hubs are one-stop-shops that help companies to become more competitive with regard to their business/production processes"
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        43.66481,
+        7.196545
+      ]
+    }
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "streetAddress": "Viale della Regione Siciliana Nord Ovest",
+      "addressRegion": "Sicily",
+      "postalCode": "90146",
+      "addressCountry": "IT",
+      "addressLocality": "Palermo"
+    }
+  },
+  "representatives": {
+    "type": "StructuredValue",
+    "value": [
+      {
+        "name": "John",
+        "surname": "Doe",
+        "email": "john.doe@sample-dih.com",
+        "role": "Engineer",
+        "responsibilities": "Manufacturing engineer"
+      }
+    ]
+  },
+  "domain": {
+    "type": "StructuredValue",
+    "value": [
+      "Manufacture of machinery and equipment"
+    ]
+  },
+  "competences": {
+    "type": "StructuredValue",
+    "value": [
+      "Additive manufacturing (3D printing)"
+    ]
+  },
+  "socialAccounts": {
+    "type": "StructuredValue",
+    "value": {
+      "linkedin": "https://www.linkedin.com/company/sample-dih",
+      "facebook": "https://www.facebook.com/sample.dih/",
+      "twitter": "https://www.twitter.com/sampledih",
+      "instagram": "https://www.instagram.com/lifeatsampledih"
+    }
+  },
+  "relation": {
+    "type": "StructuredValue",
+    "value": [
+      {
+        "id": "DigitalInnovationHub:R5Ju4oO0_X_Jy8GO5d2"
+      },
+      {
+        "id": "DigitalInnovationHub:D5yr9HT3_X_RH7Fy7H9"
+      }
+    ]
+  },
+  "dateSubmitted": {
+    "type": "DateTime",
+    "value": "2020-05-07T15:00:13.408Z"
+  },
+  "dateUpdated": {
+    "type": "DateTime",
+    "value": "2020-07-07T15:05:59.408Z"
+  }
 }
