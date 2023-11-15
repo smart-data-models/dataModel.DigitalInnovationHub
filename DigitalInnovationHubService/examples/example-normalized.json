@@ -1,82 +1,80 @@
 {
-	"id": "urn:ngsi-ld:DigitalInnovationHubService:DigitalInnovationHubService:b6IZuH0B_X_d5NJkB0eY",
-	"type": "DigitalInnovationHubService",
-	"title": {
-		"type": "Text",
-		"value": "Trend watching"
-	},
-	"description": {
-		"type": "Text",
-		"value": "Provision of insights and trend on markets to companies to stimulate their internal innovation"
-	},
-	"serviceImage": {
-		"type": "URL",
-		"value": "https://www.sample-dih.com/logo.png"
-	},
-	"category": {
-		"type": "Text",
-		"value": "Ecosystem"
-	},
-	"serviceType": {
-		"type": "Text",
-		"value": "DIH Innovation Development"
-	},
-	"serviceSubType": {
-		"type": "Text",
-		"value": "Trend watching"
-	},
-	"target": {
-		"type": "array",
-		"value": [
-			"Engineers",
-			"Directors"
-		]
-	},
-	"url": {
-		"type": "Text",
-		"value": "https://www.sample-dih.com/trend-watching"
-	},
-	"additionalMaterial": {
-		"type": "array",
-		"value": [
-			{
-				"label": "Brochure",
-				"url": "https://www.sample-dih.com/trend-watching/brochure.pdf"
-			}
-		]
-	},
-	"contacts": {
-		"type": "array",
-		"value": [
-			{
-				"name": "Mark Johnson",
-				"email": "mark.johnson@sample-dih.it"
-			}
-		]
-	},
-	"author": {
-		"type": "Text",
-		"value": "John Doe"
-	},
-	"relation": {
-		"type": "array",
-		"value": [
-			{
-				"id": "urn:ngsi-ld:DigitalInnovationHubService:id:R5Ju4oO0_X_Jy8GO5d2"
-			},
-			{
-				"id": "urn:ngsi-ld:DigitalInnovationHubService:id:D5yr9HT3_X_RH7Fy7H9"
-			}
-		]
-	},
-	"dateSubmitted": {
-		"type": "Date-Time",
-		"value": "2020-07-07T15:05:59.408Z"
-		
-	},
-	"dateUpdated": {
-		"type": "Date-Time",
-		"value": "2020-07-07T15:05:59.408Z"
-		
-	}
+  "id": "urn:ngsi-ld:DigitalInnovationHubService:DigitalInnovationHubService:b6IZuH0B_X_d5NJkB0eY",
+  "type": "DigitalInnovationHubService",
+  "title": {
+    "type": "Text",
+    "value": "Trend watching"
+  },
+  "description": {
+    "type": "Text",
+    "value": "Provision of insights and trend on markets to companies to stimulate their internal innovation"
+  },
+  "serviceImage": {
+    "type": "Text",
+    "value": "https://www.sample-dih.com/logo.png"
+  },
+  "category": {
+    "type": "Text",
+    "value": "Ecosystem"
+  },
+  "serviceType": {
+    "type": "Text",
+    "value": "DIH Innovation Development"
+  },
+  "serviceSubType": {
+    "type": "Text",
+    "value": "Trend watching"
+  },
+  "target": {
+    "type": "StructuredValue",
+    "value": [
+      "Engineers",
+      "Directors"
+    ]
+  },
+  "url": {
+    "type": "Text",
+    "value": "https://www.sample-dih.com/trend-watching"
+  },
+  "additionalMaterial": {
+    "type": "StructuredValue",
+    "value": [
+      {
+        "label": "Brochure",
+        "url": "https://www.sample-dih.com/trend-watching/brochure.pdf"
+      }
+    ]
+  },
+  "contacts": {
+    "type": "StructuredValue",
+    "value": [
+      {
+        "name": "Mark Johnson",
+        "email": "mark.johnson@sample-dih.it"
+      }
+    ]
+  },
+  "author": {
+    "type": "Text",
+    "value": "John Doe"
+  },
+  "relation": {
+    "type": "StructuredValue",
+    "value": [
+      {
+        "id": "urn:ngsi-ld:DigitalInnovationHubService:id:R5Ju4oO0_X_Jy8GO5d2"
+      },
+      {
+        "id": "urn:ngsi-ld:DigitalInnovationHubService:id:D5yr9HT3_X_RH7Fy7H9"
+      }
+    ]
+  },
+  "dateSubmitted": {
+    "type": "DateTime",
+    "value": "2020-07-07T15:05:59.408Z"
+  },
+  "dateUpdated": {
+    "type": "DateTime",
+    "value": "2020-07-07T15:05:59.408Z"
+  }
 }
