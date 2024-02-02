@@ -479,6 +479,11 @@ DigitalInnovationHub:
       type: string
       x-ngsi:
         type: Property
+    title:
+      description: Official name of the DIH
+      type: string
+      x-ngsi:
+        type: Property
     type:
       description: NGSI entity type. It has to be DigitalInnovationHub
       enum:
@@ -497,8 +502,8 @@ DigitalInnovationHub:
     - type
   type: object
   x-derived-from: ""
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.DigitalInnovationHub/blob/master/DigitalInnovationHub/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.DIH/DigitalInnovationHub/schema.json
   x-model-tags: DIH
-  x-version: 0.0.4
+  x-version: 0.0.5
