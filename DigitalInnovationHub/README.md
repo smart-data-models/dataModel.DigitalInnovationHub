@@ -1,6 +1,6 @@
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
 # DigitalInnovationHub
-Version: 0.0.4
+Version: 0.0.5
 
 ## Description 
 
@@ -22,6 +22,8 @@ Link alla [specifica](https://github.com/smart-data-models/dataModel.DigitalInno
 [仕様へのリンク](https://github.com/smart-data-models/dataModel.DigitalInnovationHub/blob/master/DigitalInnovationHub/doc/spec_JA.md)
 
 [链接到规范](https://github.com/smart-data-models/dataModel.DigitalInnovationHub/blob/master/DigitalInnovationHub/doc/spec_ZH.md)
+
+[사양 링크](https://github.com/smart-data-models/dataModel.DigitalInnovationHub/blob/master/DigitalInnovationHub/doc/spec_KO.md)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.DigitalInnovationHub/DigitalInnovationHub/examples/example.json) (keyvalues) for NGSI v2
