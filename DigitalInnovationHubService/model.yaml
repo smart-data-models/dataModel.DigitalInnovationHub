@@ -130,6 +130,7 @@ DigitalInnovationHubService:
                   - anyOf:
                       - type: string
                       - items:
+                          type: string
                         type: array
                 description: 'A language someone may use with or at the item, service or place. Please use one of the language codes from the IETF BCP 47 standard. It is implemented the Text option but it could be also Language'
                 x-ngsi:
@@ -581,6 +582,11 @@ DigitalInnovationHubService:
       x-ngsi:
         model: https://schema.org/Text
         type: Property
+    title:
+      description: Official name of the DIH
+      type: string
+      x-ngsi:
+        type: Property
     type:
       description: NGSI entity type. It has to be DigitalInnovationHubService
       enum:
@@ -599,8 +605,8 @@ DigitalInnovationHubService:
     - type
   type: object
   x-derived-from: ""
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.DigitalInnovationHub/blob/master/DigitalInnovationHubService/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.DIH/DigitalInnovationHubService/schema.json
   x-model-tags: DIH
-  x-version: 0.0.2
+  x-version: 0.0.3
