@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "DigitalInnovationHub"
 subject = "dataModel.DigitalInnovationHub"
-title = "{'type': 'Property', 'value': 'Sample DIH'}"
+title = "Sample DIH"
 attribute = "title"
 value = title
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-website = "{'type': 'Property', 'value': 'https://www.sample-dih.com/'}"
+website = "https://www.sample-dih.com/"
 attribute = "website"
 value = website
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-logo = "{'type': 'Property', 'value': 'https://www.sample-dih.com/logo.png'}"
+logo = "https://www.sample-dih.com/logo.png"
 attribute = "logo"
 value = logo
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-representatives = {'type': 'Property', 'value': [{'name': 'John', 'surname': 'Doe', 'email': 'john.doe@sample-dih.com', 'role': 'Engineer', 'responsibilities': 'Manufacturing engineer'}]}
+representatives = [{'name': 'John', 'surname': 'Doe', 'email': 'john.doe@sample-dih.com', 'role': 'Engineer', 'responsibilities': 'Manufacturing engineer'}]
 attribute = "representatives"
 value = representatives
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
