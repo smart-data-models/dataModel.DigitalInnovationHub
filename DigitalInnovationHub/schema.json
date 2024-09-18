@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/schema#",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$schemaVersion": "0.0.5",
   "$id": "https://smart-data-models.github.io/dataModel.DIH/DigitalInnovationHub/schema.json",
   "title": "Smart Data Models - Digital Innovation Hub",
