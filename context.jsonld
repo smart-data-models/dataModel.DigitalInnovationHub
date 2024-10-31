@@ -14,7 +14,7 @@
         "availableLanguage": "https://smartdatamodels.org/availableLanguage",
         "bbox": {
             "@container": "@list",
-            "@id": "geojson:bbox"
+            "@id": "https://purl.org/geojson/vocab#bbox"
         },
         "category": "https://smartdatamodels.org/dataModel.DigitalInnovationHub/category",
         "competences": "https://smartdatamodels.org/dataModel.DigitalInnovationHub/competences",
@@ -24,7 +24,7 @@
         "contacts": "https://smartdatamodels.org/dataModel.DigitalInnovationHub/contacts",
         "coordinates": {
             "@container": "@list",
-            "@id": "geojson:coordinates"
+            "@id": "https://purl.org/geojson/vocab#coordinates"
         },
         "dataProvider": "https://smartdatamodels.org/dataProvider",
         "dateCreated": "https://smartdatamodels.org/dateCreated",
@@ -41,7 +41,7 @@
         "instagram": "https://smartdatamodels.org/dataModel.DigitalInnovationHub/instagram",
         "label": "https://smartdatamodels.org/dataModel.DigitalInnovationHub/label",
         "linkedin": "https://smartdatamodels.org/dataModel.DigitalInnovationHub/linkedin",
-        "location": "ngsi-ld:location",
+        "location": "https://uri.etsi.org/ngsi-ld/location",
         "logo": "https://smartdatamodels.org/dataModel.DigitalInnovationHub/logo",
         "name": "https://smartdatamodels.org/name",
         "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
@@ -64,6 +64,7 @@
         "surname": "https://smartdatamodels.org/dataModel.DigitalInnovationHub/surname",
         "target": "https://smartdatamodels.org/dataModel.DigitalInnovationHub/target",
         "telephone": "https://smartdatamodels.org/telephone",
+        "title": "http://purl.org/dc/terms/title",
         "twitter": "https://smartdatamodels.org/dataModel.DigitalInnovationHub/twitter",
         "type": "@type",
         "url": "https://smartdatamodels.org/url",
